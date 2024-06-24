@@ -1,6 +1,6 @@
 # AWS_Operations - Terraform
 
-This project contains Terraform configurations to create and manage AWS resources, specifically an S3 bucket. 
+This project contains Terraform configurations to create and manage AWS resources. 
 
 ## Prerequisites
 
