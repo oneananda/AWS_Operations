@@ -8,7 +8,7 @@ Before you begin, ensure you have the following installed:
 
 - [Terraform](https://www.terraform.io/downloads.html)
 - [AWS CLI](https://aws.amazon.com/cli/)
-- An AWS account with appropriate permissions to create S3 buckets
+- An AWS account with appropriate permissions to create AWS resources
 
 ## Setup
 
