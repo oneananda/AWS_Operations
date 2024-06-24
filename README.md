@@ -1,6 +1,6 @@
 # AWS_Operations
 
-This project contains examples to create and manage AWS resources, specifically an S3 bucket. 
+This project contains examples to create and manage AWS resources. 
 
 ## Prerequisites
 
