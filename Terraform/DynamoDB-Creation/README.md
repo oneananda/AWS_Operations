@@ -2,8 +2,8 @@ In command prompt, run the following commands:
 
 Initialize Terraform
 
-terraform init
+**terraform init**
 
 Apply Terraform Configuration
 
-terraform apply
+**terraform apply**
