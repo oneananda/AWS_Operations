@@ -18,4 +18,4 @@ Apply Terraform Configuration
 
 To remove the resource
 
-**terraform apply**
+**terraform destroy**
