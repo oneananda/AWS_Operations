@@ -12,6 +12,7 @@
 
 **Answer: C**
 
+**Explanation:**  
 Data on ephemeral storage (instance store) **will be lost** when the instance is stopped or terminated. However, it will not be lost if the instance is simply restarted.
 
 ---
@@ -26,6 +27,7 @@ Data on ephemeral storage (instance store) **will be lost** when the instance is
 
 **Answer: B**
 
+**Explanation:**  
 Data on ephemeral storage (instance store) **will not be lost** when the instance is restarted. However, it will be lost if the instance is stopped or terminated.
 
 ## Pricing Models
@@ -45,10 +47,10 @@ Spot Instances allow you to bid for unused EC2 capacity at a significant discoun
 
 **Use-cases for each**
 
-- On-Demand Instances : Ideal for short-term, unpredictable workload timings and that cannot to be interuppted, Example : Development and testing environment
-- Reserved Instanses : Ideal for long-term and predictable workloads, need to commit for 1 - 3 years, Example : Running a web application
-- Dedicated Hosts : Suitable for scenario where physical server isolation for compliance, licencing and regulatory needs, Example : Running a licenced software which needs dedicated hardware
-- Spot Instances : Suitable for flexible, fault-tolerant and non important jobs which can be interupted and ran later if it is interuppted, Example : Batch jobs, data-analysis or distributed workloads.
+- **On-Demand Instances** : `Ideal for short-term`, unpredictable workload timings and that cannot to be interuppted, Example : Development and testing environment
+- **Reserved Instanses** : `Ideal for long-term and predictable workloads`, need to commit for 1 - 3 years, Example : Running a web application
+- **Dedicated Hosts** : `Suitable for scenario where physical server isolation` for compliance, licencing and regulatory needs, Example : Running a licenced software which needs dedicated hardware
+- **Spot Instances** : `Suitable for flexible, fault-tolerant and non important jobs` which can be interupted and ran later if it is interuppted, Example : Batch jobs, data-analysis or distributed workloads.
 
 ---
 
