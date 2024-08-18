@@ -1,15 +1,15 @@
 # Amazon EC2 Instance Types
 
-Amazon EC2 Instances are categorized based on performance characteristics and appropriate use cases.
+`Amazon EC2 Instances` are categorized based on performance characteristics and appropriate use cases.
 
-The following are the instance types based on the performance
+The following are the instance types `based on the performance`
 
 ## General Purpose
 
-- Balances computing, memory and networking resources
+- `Balances computing, memory and networking resources`
 - Suitable for variety of workloads
-- T-Family instances offer burstable performance by utilyzing CPU credits
-- Once CPU credits exhausted then the bursting capablities are disabled, until more credits are earned
+- T-Family instances offer burstable performance by utilizing CPU credits
+- Once CPU credits exhausted then the bursting capabilities are disabled, until more credits are earned
 
 
 ## General Purpose - EC2 Instance Type and Server Purposes
@@ -21,7 +21,7 @@ The following are the instance types based on the performance
 
 ## Compute optimized
 
-- Ideal for compute-bound applications which needs high-performance processors
+- Ideal for compute-bound applications which needs `high-performance processors`
 
 
 ## Compute optimized - EC2 Instance Type and Server Purposes
