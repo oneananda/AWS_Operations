@@ -1,58 +1,44 @@
 # Amazon EC2 Components
 
-Amazon EC2 Components, this repo folder provides comprehensive related to Amazon EC2 Components resources.
+Amazon EC2 Components - This repo folder provides comprehensive resources related to Amazon EC2 Components.
 
-## Understanding EC2 instance components
+## Understanding EC2 Instance Components
 
-AMI - Amazon Machine Image
+- **AMI** - Amazon Machine Image
+- **Instance Type**
+- **Instance Size**
 
-Instance type 
+### Configuring Instances
 
-Instance size
-
-### Configuring instances
-
-Number of instances
-
-Billing type
-
-Configure VPC (Virtual Private Cloud)
-
-Configure Subnet
-
-Configure IP settings (Public, Private, IPV4, IPV6)
-
-Configure domain / directory integration
-
-Cionfigure  placement group 
-
-Cnfigure IAM roles
-
-Configure shutdown behaviour
-
-Enable termination protection
-
-Option to mount EFS system
-
-Configure what can the instance to on launch (user data)
+- **Number of Instances**
+- **Billing Type**
+- **Configure VPC (Virtual Private Cloud)**
+- **Configure Subnet**
+- **Configure IP Settings (Public, Private, IPv4, IPv6)**
+- **Configure Domain / Directory Integration**
+- **Configure Placement Group**
+- **Configure IAM Roles**
+- **Configure Shutdown Behavior**
+- **Enable Termination Protection**
+- **Option to Mount EFS (Elastic File System)**
+- **Configure User Data (Scripts/Commands on Launch)**
 
 ### Storage
 
-Add storage of prefered type
-Determine EBS (Elastic Bean Stack) volumes when the instance is terminated
+- **Add Storage of Preferred Type**
+- **Determine EBS (Elastic Block Store) Volumes When the Instance is Terminated**
 
 ### Tags
 
-Add tags for easy identification
+- **Add Tags for Easy Identification**
 
-### Security groups
+### Security Groups
 
-Add security groups to make it act as firewall 
-Manage inbound / outbound traffic via SGs
-Modify at anytime
+- **Add Security Groups to Act as a Firewall**
+- **Manage Inbound/Outbound Traffic via Security Groups**
+- **Modify at Any Time**
 
+### Key Things to Note:
 
-### Key things to note:
-
-AMIs cannot be modified post-launch.
-No option to change the key pair after instance launch.
+- AMIs cannot be modified post-launch.
+- There is no option to change the key pair after instance launch.
