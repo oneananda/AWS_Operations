@@ -54,4 +54,3 @@ Amazon EC2 Components - This repo folder provides comprehensive resources relate
 - Termination protection disabled by default
 - EC2 instances can be part of Auto Scaling Group (ASG)
 - Basic monitoring is available using CloudWatch
-- 
