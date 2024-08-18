@@ -1,4 +1,4 @@
 # AWS Operations Learning
 
-AWS Operations Leaning, this repo folder provides comprehensive related to AWS resources. 
+AWS Operations Learning, this repo folder provides comprehensive articles related to AWS resources. 
 
