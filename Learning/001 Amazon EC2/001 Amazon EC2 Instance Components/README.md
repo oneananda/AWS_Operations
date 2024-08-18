@@ -4,7 +4,7 @@
 
 It enables the users to run their application on virtual servers known as instances without need to invest in physical hardware, with EC2 we can scale the resources up and down on need basis, making it to ideal for the business ranging from small to large enterprises.
 
-Amazon EC2 Instance Components - There are several components comes to play when it comes to instance creation.
+`Amazon EC2 Instance Components` - There are several components comes to play when it comes to instance creation.
 
 ## Understanding EC2 Instance Components
 

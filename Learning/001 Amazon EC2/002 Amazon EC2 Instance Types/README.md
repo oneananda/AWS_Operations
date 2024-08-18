@@ -1,6 +1,8 @@
 # Amazon EC2 Instance Types
 
-Amazon EC2 Instance Types, this repo folder provides comprehensive related to Amazon EC2 Instance Types resources. 
+Amazon EC2 Instances are categorized based on performance characteristics and appropriate use cases.
+
+The following are the instance types based on the performance
 
 ## General Purpose
 
