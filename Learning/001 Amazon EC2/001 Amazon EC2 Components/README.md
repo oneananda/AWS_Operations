@@ -1,10 +1,12 @@
 # Amazon EC2 Components
 
-Amazon EC2 Components - This repo folder provides comprehensive resources related to Amazon EC2 Components.
+Amazon EC2 instances are virtual servers the provide computing resources need to run the applications on the cloud.
+
+Amazon EC2 Components - There are several components comes to play when it comes to instance creation.
 
 ## Understanding EC2 Instance Components
 
-- **AMI** - Amazon Machine Image
+- **AMI** - Amazon Machine Image (Can be Windows AMI, Linux, MacOS)
 - **Instance Type**
 - **Instance Size**
 
