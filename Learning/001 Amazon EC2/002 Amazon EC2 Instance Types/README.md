@@ -1,6 +1,6 @@
-# AWS Operations Learning Amazon EC2 Instance Types
+# Amazon EC2 Instance Types
 
-AWS Operations Learning Amazon EC2 Instance Types, this repo folder provides comprehensive related to Amazon EC2 Instance Types resources. 
+Amazon EC2 Instance Types, this repo folder provides comprehensive related to Amazon EC2 Instance Types resources. 
 
 ## General Purpose
 
