@@ -65,7 +65,7 @@ Spot Instances allow you to bid for unused EC2 capacity at a significant discoun
 **Answer: C) Reserved Instances**
 
 **Explanation:**  
-Reserved Instances provide a significant discount compared to On-Demand pricing when you commit to using EC2 instances for a one- or three-year term. This option is ideal for stable workloads where you can predict the need for a certain amount of capacity over a long period. By choosing a three-year term, the company can maximize its cost savings.
+Reserved Instances provide a `significant discount compared to On-Demand pricing` when you commit to using EC2 instances for a one- or three-year term. This option is ideal for stable workloads where you can predict the need for a certain amount of capacity over a long period. By choosing a three-year term, the company can maximize its cost savings.
 
 ---
 
@@ -82,7 +82,7 @@ Reserved Instances provide a significant discount compared to On-Demand pricing 
 **Answer: B) Using EC2 Security Groups**
 
 **Explanation:**  
-Security Groups act as a virtual firewall, allowing you to control inbound and outbound traffic to your EC2 instances, ensuring that only authorized traffic can reach them.
+Security Groups act as a `virtual firewall`, allowing you to control inbound and outbound traffic to your EC2 instances, ensuring that only authorized traffic can reach them.
 
 ---
 
@@ -97,7 +97,7 @@ Security Groups act as a virtual firewall, allowing you to control inbound and o
 **Answer: C) To isolate and secure EC2 instances within a virtual network**
 
 **Explanation:**  
-A VPC allows you to define a logically isolated network in the AWS cloud where you can launch EC2 instances, control their networking settings, and enhance security through subnetting, routing, and security groups.
+A VPC allows you to `define a logically isolated network` in the AWS cloud where you can launch EC2 instances, control their networking settings, and enhance security through subnetting, routing, and security groups.
 
 ---
 
@@ -114,6 +114,21 @@ A VPC allows you to define a logically isolated network in the AWS cloud where y
 **Answer: C) To automatically scale the number of EC2 instances up or down based on demand**
 
 **Explanation:**  
-Auto Scaling Groups adjust the number of running EC2 instances automatically based on predefined criteria, ensuring that your application has the right amount of resources to handle traffic fluctuations efficiently.
+Auto Scaling Groups `adjust the number of running EC2 instances automatically` based on predefined criteria, ensuring that your application has the right amount of resources to handle traffic fluctuations efficiently.
+
+---
+
+### Question 6: Which AWS service is typically used in conjunction with EC2 to distribute incoming application traffic across multiple instances?
+
+**Options:**
+- A) AWS Lambda
+- B) Amazon RDS
+- C) Amazon CloudFront
+- D) Elastic Load Balancing (ELB)
+
+**Answer: D) Elastic Load Balancing (ELB)**
+
+**Explanation:**  
+Elastic Load Balancing `automatically distributes incoming application traffic` across multiple EC2 instances, enhancing availability and fault tolerance by ensuring that traffic is evenly spread and instances are not overwhelmed.
 
 ---
