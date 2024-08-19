@@ -100,3 +100,20 @@ Security Groups act as a virtual firewall, allowing you to control inbound and o
 A VPC allows you to define a logically isolated network in the AWS cloud where you can launch EC2 instances, control their networking settings, and enhance security through subnetting, routing, and security groups.
 
 ---
+
+## Scaling and Load Balancing
+
+### Question 5: What is the primary purpose of an Auto Scaling Group in Amazon EC2?
+
+**Options:**
+- A) To automate the deployment of EC2 instances
+- B) To distribute incoming traffic across multiple instances
+- C) To automatically scale the number of EC2 instances up or down based on demand
+- D) To provide continuous integration and continuous deployment (CI/CD) for EC2 instances
+
+**Answer: C) To automatically scale the number of EC2 instances up or down based on demand**
+
+**Explanation:**  
+Auto Scaling Groups adjust the number of running EC2 instances automatically based on predefined criteria, ensuring that your application has the right amount of resources to handle traffic fluctuations efficiently.
+
+---
