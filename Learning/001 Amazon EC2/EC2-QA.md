@@ -129,7 +129,13 @@ Savings Plans offer significant discounts compared to On-Demand pricing in excha
 **Answer:** A
 
 **Explanation:**  
-AWS charges for On-Demand EC2 instances by the second, with a minimum of 60 seconds. This allows for more cost-efficient pricing as you only pay for what you use, down to the second.
+AWS charges for On-Demand `EC2 instances by the second`, with a minimum of 60 seconds. This allows for more cost-efficient pricing as you only pay for what you use, down to the second.
+
+**Clarification:**
+One can ask question if the billing is based on seconds and why there is a rule of minumum 60 seconds, can it be called as per minute ?
+
+- **Billing by the second:** AWS EC2 On-Demand instances are billed in increments of seconds, so after the first 60 seconds, you only pay for the exact time your instance runs.
+- **Minimum of 60 seconds:** This means that even if you run an instance for only 30 seconds, you'll be billed for a full 60 seconds. After the first minute, the billing is done per second.
 
 ---
 
@@ -176,7 +182,7 @@ A VPC allows you to `define a logically isolated network` in the AWS cloud where
 **Answer:** B
 
 **Explanation:**  
-An Elastic IP address is a static, public IPv4 address that can be associated with an EC2 instance. Unlike a standard Public IP address, which may change when an instance is stopped or restarted, an Elastic IP can be reassigned between instances, providing greater control and stability.
+An Elastic IP address is a `static, public IPv4 address` that can be associated with an EC2 instance. Unlike a standard Public IP address, which may change when an instance is stopped or restarted, an Elastic IP can be reassigned between instances, providing greater control and stability.
 
 ---
 
@@ -191,7 +197,7 @@ An Elastic IP address is a static, public IPv4 address that can be associated wi
 **Answer:** B
 
 **Explanation:**  
-IAM roles can be assigned to EC2 instances to grant them temporary access credentials, allowing them to interact with other AWS services securely without needing to store long-term credentials on the instance itself.
+IAM roles can be assigned to EC2 instances `to grant them temporary access credentials`, allowing them to interact with other AWS services securely without needing to store long-term credentials on the instance itself.
 
 ---
 
@@ -238,7 +244,7 @@ Elastic Load Balancing `automatically distributes incoming application traffic` 
 **Answer:** B
 
 **Explanation:**  
-Using an ELB with Auto Scaling ensures that incoming traffic is balanced across all healthy EC2 instances in the Auto Scaling group. This provides high availability and fault tolerance for your applications by ensuring no single instance is overwhelmed with too much traffic.
+Using an ELB with Auto Scaling `ensures that incoming traffic is balanced` across all healthy EC2 instances in the Auto Scaling group. This provides high availability and fault tolerance for your applications by ensuring no single instance is overwhelmed with too much traffic.
 
 ---
 
@@ -253,7 +259,7 @@ Using an ELB with Auto Scaling ensures that incoming traffic is balanced across 
 **Answer:** C
 
 **Explanation:**  
-Amazon EC2 Auto Scaling with a health check mechanism can detect when an instance is unhealthy and automatically terminate and replace it with a new, healthy instance. This ensures that your application remains available and resilient to failure.
+Amazon EC2 Auto Scaling with a health `check mechanism can detect when an instance is unhealthy and automatically terminate` and replace it with a new, healthy instance. This ensures that your application remains available and resilient to failure.
 
 ---
 
