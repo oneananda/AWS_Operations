@@ -8,7 +8,7 @@ It enables the users to run their application on virtual servers known as instan
 
 ## Understanding EC2 Instance Components
 
-- **AMI** - Amazon Machine Image (Can be Windows AMI, Linux, MacOS)
+- **AMI** - Amazon Machine Image (Can be Windows AMI, Linux AMI, MacOS AMI)
 - **Instance Type**
 - **Instance Size**
 
@@ -50,7 +50,7 @@ It enables the users to run their application on virtual servers known as instan
 
 - AMIs cannot be modified post-launch.
 - There is no option to change the key pair after instance launch.
-- Instance types and sizes can't be changed post launch
+- Instance types and sizes can't be changed post-launch
 - EIPs (Elastic IPs) are static, won't changed even after instance restart / stopped and started
 - Data on ephemeral storage (instance store) will be lost if the instance is terminated / stopped but will not lost if the instance is restarted
 - Security groups are stateful, if you allow any inbound traffic, automatically the outbound is allowed
