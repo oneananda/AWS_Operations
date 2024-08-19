@@ -67,3 +67,36 @@ Spot Instances allow you to bid for unused EC2 capacity at a significant discoun
 **Explanation:**  
 Reserved Instances provide a significant discount compared to On-Demand pricing when you commit to using EC2 instances for a one- or three-year term. This option is ideal for stable workloads where you can predict the need for a certain amount of capacity over a long period. By choosing a three-year term, the company can maximize its cost savings.
 
+---
+
+## Security and Networking
+
+### Question 3: How can you control the traffic allowed to reach your EC2 instance?
+
+**Options:**
+- A) Using Amazon S3 bucket policies
+- B) Using EC2 Security Groups
+- C) Using IAM Roles
+- D) Using AWS Shield
+
+**Answer: B) Using EC2 Security Groups**
+
+**Explanation:**  
+Security Groups act as a virtual firewall, allowing you to control inbound and outbound traffic to your EC2 instances, ensuring that only authorized traffic can reach them.
+
+---
+
+### Question 4: What is the purpose of a Virtual Private Cloud (VPC) in relation to EC2 instances?
+
+**Options:**
+- A) To store EC2 instance data
+- B) To monitor EC2 instance performance
+- C) To isolate and secure EC2 instances within a virtual network
+- D) To provide automatic backups for EC2 instances
+
+**Answer: C) To isolate and secure EC2 instances within a virtual network**
+
+**Explanation:**  
+A VPC allows you to define a logically isolated network in the AWS cloud where you can launch EC2 instances, control their networking settings, and enhance security through subnetting, routing, and security groups.
+
+---
