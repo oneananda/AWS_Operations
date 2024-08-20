@@ -6,7 +6,7 @@ The following are the instance types `based on the performance`
 
 ## EC2 Instance Types and Server Purposes - Use Cases
 
-## General Purpose - EC2 Instance Type and Server Purposes
+## General Purpose 
 
 - `Balances computing, memory and networking resources`
 - Suitable for variety of workloads
@@ -29,7 +29,7 @@ The following are the instance types `based on the performance`
 
 - Ideal for compute-bound applications that need `high-performance processors`.
 
-## Compute Optimized - EC2 Instance Type and Server Purposes
+## Compute Optimized 
 
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ The following are the instance types `based on the performance`
 
 ---
 
-## Memory Optimized - EC2 Instance Type and Server Purposes
+## Memory Optimized 
 
 - Ideal for `memory-intensive applications` and large enterprises.
 
@@ -65,7 +65,7 @@ The following are the instance types `based on the performance`
 
 ---
 
-## Accelerated Computing - EC2 Instance Type and Server Purposes
+## Accelerated Computing 
 
 - Suitable for `HPC (High Performance Computing)` applications.
 
@@ -79,7 +79,7 @@ The following are the instance types `based on the performance`
 
 ---
 
-## Storage Optimized - EC2 Instance Type and Server Purposes
+## Storage Optimized 
 
 - Tailored for `workloads requiring high, sequential read/write access` to large data sets on local storage.
 
@@ -94,7 +94,7 @@ The following are the instance types `based on the performance`
 
 ---
 
-## Nitro-based - EC2 Instance Type and Server Purposes
+## Nitro-based 
 
 - Enables `higher IOPS provisioning for EBS volumes`, offering up to 64,000 IOPS per volume, compared to 32,000 on other instances.
 
@@ -107,5 +107,12 @@ The following are the instance types `based on the performance`
 | **Security-Sensitive Applications**   | Perfect for security-sensitive applications requiring hardware-based isolation and encryption.        |
 | **Virtualization Overhead Elimination** | Eliminates virtualization overhead for workloads requiring full access to underlying hardware resources. |
 
+**Examples**
+
+- `Bare Metal Workloads`
+
+Running hypervisor-free environments for high-performance computing, such as financial trading platforms that require direct access to hardware for low-latency processing.
+
+3rd Party Components: VMware ESXi (for on-premises to cloud migration), Oracle Real Application Clusters (RAC) for database workloads.
 
 ---
