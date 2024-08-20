@@ -4,11 +4,9 @@
 
 The following are the instance types `based on the performance`
 
-# EC2 Instance Types and Server Purposes
+## EC2 Instance Types and Server Purposes - Use Cases
 
 ## General Purpose - EC2 Instance Type and Server Purposes
-
-## General Purpose
 
 - `Balances computing, memory and networking resources`
 - Suitable for variety of workloads
@@ -44,6 +42,14 @@ The following are the instance types `based on the performance`
 | **Ad Server Engines**                 | For real-time ad-serving servers.                                                                     |
 | **Machine Learning Inference**        | Requires rapid computation.                                                                           |
 | **Scientific Modeling and Simulation**| Suitable for complex simulations.                                                                     |
+
+**Examples**
+
+- Batch Processing Workloads : Large-scale data processing in Hadoop clusters, 3rd Party Example: Apache Hadoop, Apache Spark
+- High Performance Web Servers : High traffic e-commerce websites like Amazon, eBay, 3rd Party Example: NGNIX (Pronouncation: EN-jin-EKS), HAProxy
+- Media Transcoding : Video streaming platforms like Netflix, processing multiple media files on the fly, 3rd Party Example: FFmpeg, AWS Elemental MediaConvert
+
+
 
 ---
 
