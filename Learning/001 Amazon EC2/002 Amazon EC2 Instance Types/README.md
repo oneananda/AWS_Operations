@@ -4,6 +4,10 @@
 
 The following are the instance types `based on the performance`
 
+# EC2 Instance Types and Server Purposes
+
+## General Purpose - EC2 Instance Type and Server Purposes
+
 ## General Purpose
 
 - `Balances computing, memory and networking resources`
@@ -11,9 +15,6 @@ The following are the instance types `based on the performance`
 - T-Family instances offer burstable performance by utilizing CPU credits
 - Once CPU credits exhausted then the bursting capabilities are disabled, until more credits are earned
 
-# EC2 Instance Types and Server Purposes
-
-## General Purpose - EC2 Instance Type and Server Purposes
 
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -102,3 +103,6 @@ The following are the instance types `based on the performance`
 | **High IOPS Storage**                 | Supports high IOPS storage systems for applications needing fast, low-latency storage performance.    |
 | **Security-Sensitive Applications**   | Perfect for security-sensitive applications requiring hardware-based isolation and encryption.        |
 | **Virtualization Overhead Elimination** | Eliminates virtualization overhead for workloads requiring full access to underlying hardware resources. |
+
+
+---
