@@ -13,7 +13,6 @@ The following are the instance types `based on the performance`
 - T-Family instances offer burstable performance by utilizing CPU credits
 - Once CPU credits exhausted then the bursting capabilities are disabled, until more credits are earned
 
-
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
 | **Web Servers**                       | Suitable for a balanced mix of compute, memory, and networking.                                       |
@@ -49,13 +48,11 @@ The following are the instance types `based on the performance`
 - High Performance Web Servers : High traffic e-commerce websites like Amazon, eBay, 3rd Party Example: NGNIX (Pronouncation: EN-jin-EKS), HAProxy
 - Media Transcoding : Video streaming platforms like Netflix, processing multiple media files on the fly, 3rd Party Example: FFmpeg, AWS Elemental MediaConvert
 
-
-
 ---
 
 ## Memory Optimized - EC2 Instance Type and Server Purposes
 
-- Ideal for memory-intensive applications and large enterprises.
+- Ideal for `memory-intensive applications` and large enterprises.
 
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -70,7 +67,7 @@ The following are the instance types `based on the performance`
 
 ## Accelerated Computing - EC2 Instance Type and Server Purposes
 
-- Suitable for HPC (High Performance Computing) applications.
+- Suitable for `HPC (High Performance Computing)` applications.
 
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -84,7 +81,7 @@ The following are the instance types `based on the performance`
 
 ## Storage Optimized - EC2 Instance Type and Server Purposes
 
-- Tailored for workloads requiring high, sequential read/write access to large data sets on local storage.
+- Tailored for `workloads requiring high, sequential read/write access` to large data sets on local storage.
 
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -99,7 +96,7 @@ The following are the instance types `based on the performance`
 
 ## Nitro-based - EC2 Instance Type and Server Purposes
 
-- Enables higher IOPS provisioning for EBS volumes, offering up to 64,000 IOPS per volume, compared to 32,000 on other instances.
+- Enables `higher IOPS provisioning for EBS volumes`, offering up to 64,000 IOPS per volume, compared to 32,000 on other instances.
 
 | **Use Case**                          | **Description**                                                                                      |
 |---------------------------------------|------------------------------------------------------------------------------------------------------|
