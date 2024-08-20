@@ -109,10 +109,14 @@ The following are the instance types `based on the performance`
 
 **Examples**
 
-- `Bare Metal Workloads`
+**Bare Metal Workloads**
+
+Bare Metal Workloads on AWS EC2 provide the highest level of performance and control available in the cloud. They are best suited for applications requiring direct access to hardware or those that need to meet strict compliance and licensing requirements. However, they come with added complexity and cost considerations, making them ideal for specific, high-demand workloads.
 
 Running hypervisor-free environments for high-performance computing, such as financial trading platforms that require direct access to hardware for low-latency processing.
 
-3rd Party Components: VMware ESXi (for on-premises to cloud migration), Oracle Real Application Clusters (RAC) for database workloads.
+3rd Party Components: 
+- VMware ESXi (for on-premises to cloud migration), 
+- Oracle Real Application Clusters (RAC) for database workloads.
 
 ---
