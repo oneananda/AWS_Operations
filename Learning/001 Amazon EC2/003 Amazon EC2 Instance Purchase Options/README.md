@@ -2,6 +2,8 @@
 
 ## Instance Purchasing Options in AWS EC2:
 
+---
+
 ### On-Demand Instances
 
 - Pay by hour / pay by seconds
