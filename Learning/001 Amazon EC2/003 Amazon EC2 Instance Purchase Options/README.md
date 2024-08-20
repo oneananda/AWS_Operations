@@ -26,3 +26,11 @@
 
 ---
 
+### Reserved Instances (RI)
+
+- Commitment from 1 to 3 years
+- The following determine the price
+  - Instance type
+  - Region
+  - Platform
+- Can sell the unused instances in AWS Marketplace
