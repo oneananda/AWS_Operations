@@ -33,6 +33,8 @@ The following are the instance types `based on the performance`
 
 ## Memory optimized - EC2 Instance Type and Server Purposes
 
+- Ideal for memory intensive applications, large enterprises
+
 
 |                    | In-Memory Databases | Real-time Big Data Analytics | High-Performance Computing (HPC) for Genomics | In-Memory Caching | Large-scale Enterprise Applications | Machine Learning and AI Model Training |
 |--------------------|---------------------|-----------------------------|----------------------------------------------|-------------------|------------------------------------|----------------------------------------|
