@@ -117,14 +117,14 @@ Reserved Instances provide a `significant discount compared to On-Demand pricing
 The correct answer is B). Reserved Instances (RIs) provide cost savings for specific instance types, availability zones, and platforms over a 1 or 3-year commitment. Auto Scaling can launch additional instances as needed, but only those that match the RI specifications will benefit from the RI pricing. Instances that don't match are billed at On-Demand rates. Auto Scaling does not automatically prefer or adjust to RIs; it simply launches instances based on demand.
 
 **Incorrect answers**
-A) Auto Scaling automatically uses Reserved Instances for any instances it launches.
-Incorrect: Auto Scaling doesn't automatically use RIs for all instances. RIs only apply if the instances launched by Auto Scaling match the specific RI's type, availability zone, and platform.
+- A) Auto Scaling automatically uses Reserved Instances for any instances it launches.
+**Incorrect:** Auto Scaling doesn't automatically use RIs for all instances. RIs only apply if the instances launched by Auto Scaling match the specific RI's type, availability zone, and platform.
 
-C) Auto Scaling cannot be used with Reserved Instances because RIs are fixed for 1 or 3 years.
-Incorrect: Auto Scaling can still be used with RIs. The fixed term of RIs provides cost savings for specific instances, but Auto Scaling can scale beyond the reserved capacity, charging On-Demand rates for additional instances.
+- C) Auto Scaling cannot be used with Reserved Instances because RIs are fixed for 1 or 3 years.
+**Incorrect:** Auto Scaling can still be used with RIs. The fixed term of RIs provides cost savings for specific instances, but Auto Scaling can scale beyond the reserved capacity, charging On-Demand rates for additional instances.
 
-D) Auto Scaling will adjust the Reserved Instances to cover the entire scaling group.
-Incorrect: Auto Scaling doesn't adjust RIs. It simply launches instances as needed. Only instances that match the RI specifications benefit from the RI pricing; the rest are billed at On-Demand rates.
+- D) Auto Scaling will adjust the Reserved Instances to cover the entire scaling group.
+**Incorrect:** Auto Scaling doesn't adjust RIs. It simply launches instances as needed. Only instances that match the RI specifications benefit from the RI pricing; the rest are billed at On-Demand rates.
 
 ---
 
