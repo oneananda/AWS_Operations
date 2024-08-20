@@ -34,3 +34,10 @@
   - Region
   - Platform
 - Can sell the unused instances in AWS Marketplace
+
+**Standard Reserved Instances**
+
+- Use Case: Steady-state, predictable workloads.
+- Economy: High savings with long-term commitment.
+
+---
