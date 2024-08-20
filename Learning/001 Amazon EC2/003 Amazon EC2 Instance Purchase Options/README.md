@@ -40,4 +40,14 @@
 - Use Case: Steady-state, predictable workloads.
 - Economy: High savings with long-term commitment.
 
+**Convertible Reserved Instances**
+
+- Use Case: Workloads that may change.
+- Economy: Moderate savings with long-term commitment.
+
+- **Scheduled Reserved Instances**
+
+- Use Case: Predictable workloads that run on schedule.
+- Economy: Cost savings compared to On-Demand, but with scheduled flexibility.
+
 ---
