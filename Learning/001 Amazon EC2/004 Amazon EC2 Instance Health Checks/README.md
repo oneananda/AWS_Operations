@@ -26,6 +26,10 @@ There are several sub-types of checks available
 
 **Integration with Other Services:** Built into EC2, can trigger CloudWatch alarms, integrate with Route 53, Can trigger Auto Scaling based on instance health.
 
+**Conclusion:** Usaully, the critical health check metrices are available via EC2 instance without configuring any other services, in advanced cases we may need to install CloudWatch Agent in instances to get additional metrices.
+
+We may use 3rd party services like New Relic, Datadog or Prometheus to get more intristic details of the instance.
+
 ---
 
 ### Elastic Load Balancer (ELB) Health Check
