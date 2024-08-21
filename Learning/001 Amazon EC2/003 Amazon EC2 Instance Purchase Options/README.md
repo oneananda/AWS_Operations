@@ -115,3 +115,11 @@ If you are not using Dedicated host for this scenario
 | **Cost**                         | Potentially higher cost due to increased control and management.                     | Generally easier and potentially less expensive to manage, depending on use case. |
 
 ---
+
+### Capacity Reservations
+
+- We can reserve Capacity Reservations for any Availablity Zone for any duration
+- No long term commitment is needed
+- This is ensuring capacity availability for mission-critical apps.
+
+---
