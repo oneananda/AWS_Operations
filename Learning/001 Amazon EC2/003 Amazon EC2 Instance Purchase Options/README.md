@@ -7,8 +7,8 @@
 ### On-Demand Instances
 
 - Pay by hour / pay by seconds
-- No long term commitments
-- Charges only if the instance is running
+- `No long term commitments`
+- Charges only if the `instance is running`
 
 ---
 
@@ -35,7 +35,7 @@
   - Instance type
   - Region
   - Platform
-- Can sell the unused instances in AWS Marketplace
+- Can `buy / sell the unused instances` in AWS Marketplace, `except for Convertible RIs`
 
 **Standard Reserved Instances**
 
@@ -102,7 +102,7 @@ If you are not using Dedicated host for this scenario
 
 ---
 
-# Differences Between Dedicated Hosts and Dedicated Instances
+## Differences Between Dedicated Hosts and Dedicated Instances
 
 | **Feature**                      | **Dedicated Hosts**                                                                 | **Dedicated Instances**                                                |
 |----------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------|
