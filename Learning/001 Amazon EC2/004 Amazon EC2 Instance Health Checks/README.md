@@ -20,6 +20,12 @@ There are several sub-types of checks available
 
 **Health Status Indicators:** Status `OK` (all checks pass) or `Impaired` (one or more checks fail).
 
+**On Failure:** Configure to Trigger alarms, alert for manual intervention, or configure automated recovery options (e.g., reboot).
+
+**Recovery Time:** Depends on the failure type, possibly AWS may need to intervene in such cases.
+
+**Integration with Other Services:** Built into EC2, can trigger CloudWatch alarms, integrate with Route 53, Can trigger Auto Scaling based on instance health.
+
 ---
 
 ### Elastic Load Balancer (ELB) Health Check
