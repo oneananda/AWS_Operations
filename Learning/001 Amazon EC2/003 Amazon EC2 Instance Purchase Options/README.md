@@ -65,6 +65,7 @@
 
 ### Dedicated Hosts
 
+- Dedicated hardware 
 - Rent a host or rack
 - Suitable for the SW which you pay per socket, pay per core, pay per VM licences to reduce costs
 - Supports BYOL (Bring your own licence)
@@ -93,10 +94,10 @@ If you are not using Dedicated host for this scenario
 
 ### Dedicated Instances
 
-- Cost sensitive that can accept interuptions
-- Suitable for non-critical workloads
-- There is no commitment needed
-- Anytime the instance may get terminated
+- Dedicated hardware 
+- Similiar to Dedicated Hosts but having less control over the hardware
+- Less granular control
+- Typically, Dedicated Instances are less expensive than Dedicated Hosts
 
 ---
 
@@ -111,3 +112,5 @@ If you are not using Dedicated host for this scenario
 | **Instance Types**               | Allows mixing of different EC2 instance types within the same family on a single host. | Instances are managed by AWS with no control over instance type placement. |
 | **Management Complexity**        | Requires more management and monitoring due to increased control.                    | Simpler to manage, as AWS handles the underlying server management.     |
 | **Cost**                         | Potentially higher cost due to increased control and management.                     | Generally easier and potentially less expensive to manage, depending on use case. |
+
+---
