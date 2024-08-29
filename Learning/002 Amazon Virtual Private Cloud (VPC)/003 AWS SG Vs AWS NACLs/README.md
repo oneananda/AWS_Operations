@@ -1,19 +1,21 @@
-# Differences Between AWS Network Access Control Lists (NACLs) and Security Groups
+# AWS Network Access Control Lists (NACLs) and Security Groups
 
-| Feature                          | Network Access Control Lists (NACLs)           | Security Groups                               |
-|----------------------------------|------------------------------------------------|-----------------------------------------------|
-| **Statefulness**                 | Stateless: Does not track connection states.   | Stateful: Automatically allows return traffic.|
-| **Level of Operation**           | Operates at the subnet level.                  | Operates at the instance level (or other resources). |
-| **Inbound Rules**                | Evaluated in order based on rule number.       | All rules are evaluated; the most permissive rule applies. |
-| **Outbound Rules**               | Requires explicit rules for outbound traffic.  | Automatically allows outbound traffic for inbound connections unless explicitly denied. |
-| **Default Behavior**             | Default NACL allows all inbound and outbound traffic. Custom NACLs deny all by default. | By default, allows no inbound traffic and all outbound traffic. |
-| **Rule Numbering**               | Rules are numbered, and evaluated in order from lowest to highest. | No numbering; all rules are evaluated. |
-| **Logging and Monitoring**       | Does not natively log traffic.                 | Integrated with AWS CloudTrail for logging of configuration changes; can use VPC Flow Logs for monitoring. |
-| **Support for IP Ranges (CIDR)** | Can filter traffic based on IP ranges (CIDR blocks). | Can filter traffic based on IP ranges (CIDR blocks). |
-| **Protocol Support**             | Supports TCP, UDP, ICMP, and other IP protocols. | Supports TCP, UDP, ICMP, and other IP protocols. |
-| **Default Association**          | Automatically associated with all subnets if not explicitly set. | Must be explicitly associated with instances. |
-| **Use Case**                     | Additional layer of security at the subnet level. Ideal for controlling traffic between subnets. | Primary layer of security at the instance level. Ideal for controlling traffic to and from individual instances. |
-| **Management**                   | Managed at the subnet level in the VPC.        | Managed at the instance or resource level. |
-| **Rule Evaluation**              | Rules are evaluated in a sequential order, and the first match determines the action. | All rules are evaluated together, and if one rule allows traffic, it is permitted. |
-| **Return Traffic**               | Requires explicit rules to allow return traffic. | Automatically allows return traffic for inbound connections. |
+# NACLs vs. Security Groups: What's the Difference?
+
+| Feature                          | Network Access Control Lists (NACLs)          | Security Groups                               |
+|----------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Statefulness**                 | NACLs are **stateless**, meaning they don't remember anything about previous requests. Each request is treated like it's the first one. | Security Groups are **stateful**. They remember things like whether a request was allowed, so they automatically allow return traffic without you having to do anything extra. |
+| **Where They Work**              | NACLs work at the **subnet level**, so they control traffic for all instances in a subnet. | Security Groups work at the **instance level** (or for other specific resources), so they control traffic for individual instances. |
+| **Inbound Rules**                | NACLs follow their rules in a specific order, starting from the lowest number. Once a match is found, that's it—no more rules are checked. | Security Groups check all their rules, and if any rule allows the traffic, it's allowed in. They don't care about the order. |
+| **Outbound Rules**               | With NACLs, you need to set up rules for **both** inbound and outbound traffic. If you want traffic to go out, you have to explicitly allow it. | Security Groups automatically allow return traffic if it was allowed in. So if someone connects in, their responses are allowed out without extra rules. |
+| **Default Settings**             | By default, the NACL that comes with your VPC allows everything in and out. But if you create a new NACL, it blocks everything until you set up rules. | The default Security Group blocks everything from coming in, but it allows everything to go out unless you say otherwise. |
+| **How Rules Are Ordered**        | NACLs have numbered rules, and they check them in order from lowest to highest. The first rule that matches gets applied. | Security Groups don’t have rule numbers. They look at all the rules and use the most permissive one that applies. |
+| **Logging and Monitoring**       | NACLs don’t keep track of what they block or allow by default. You’ll need to set up something like VPC Flow Logs to see what’s happening. | Security Groups can log changes through AWS CloudTrail, and you can monitor traffic with VPC Flow Logs. |
+| **IP Address Filtering**         | NACLs can filter traffic based on specific IP address ranges (CIDR blocks). | Security Groups can also filter traffic based on IP address ranges (CIDR blocks). |
+| **Protocol Support**             | NACLs can handle traffic using protocols like TCP, UDP, ICMP, and others. | Security Groups support the same protocols—TCP, UDP, ICMP, and more. |
+| **How They’re Assigned**         | Every subnet in a VPC has to be associated with a NACL. If you don’t pick one, it’ll get the default NACL. | Security Groups need to be assigned to specific instances or resources; they’re not automatically applied. |
+| **Best Use Case**                | NACLs are great for adding an extra layer of security at the subnet level, especially when you want to control traffic between different subnets. | Security Groups are your go-to for securing individual instances. They’re perfect for managing who can connect to your servers and how. |
+| **How They’re Managed**          | NACLs are managed at the subnet level in your VPC. | Security Groups are managed at the instance level or for specific AWS resources. |
+| **How Rules Are Applied**        | NACLs apply rules in a set order, and once a match is found, that rule is applied, and the rest are ignored. | Security Groups check all rules at once. If any rule allows the traffic, it’s allowed. |
+| **Return Traffic**               | With NACLs, you need to create rules for both incoming and outgoing traffic separately. Return traffic won’t be allowed unless you set up a rule for it. | Security Groups automatically allow return traffic for any inbound connections, so you don’t need to worry about it. |
 
