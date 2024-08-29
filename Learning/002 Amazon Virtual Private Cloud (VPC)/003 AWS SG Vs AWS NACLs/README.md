@@ -1,6 +1,6 @@
 # AWS Network Access Control Lists (NACLs) and Security Groups
 
-# NACLs vs. Security Groups: What's the Difference?
+# AWS NACLs vs. Security Groups: What's the Difference?
 
 | Feature                          | Network Access Control Lists (NACLs)          | Security Groups                               |
 |----------------------------------|-----------------------------------------------|-----------------------------------------------|
