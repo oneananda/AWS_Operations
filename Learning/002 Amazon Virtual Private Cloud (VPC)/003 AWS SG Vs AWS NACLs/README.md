@@ -1,6 +1,6 @@
-# AWS Network Access Control Lists (NACLs) and Security Groups
+# AWS Security Groups and AWS Network Access Control Lists (NACLs) 
 
-## AWS NACLs vs. AWS Security Groups: What's the Difference?
+## AWS Security Groups vs. AWS NACLs: What's the Difference?
 
 | Feature                          | Security Groups                               | Network Access Control Lists (NACLs)           |
 |----------------------------------|-----------------------------------------------|------------------------------------------------|
@@ -17,7 +17,7 @@
 | **How Rules Are Applied**        | Security Groups check all rules at once. If any rule allows the traffic, it’s allowed. | NACLs apply rules in a set order, and once a match is found, that rule is applied, and the rest are ignored. |
 | **Return Traffic**               | Security Groups automatically allow return traffic for any inbound connections, so we don’t need to worry about it. | With NACLs, we need to create rules for both incoming and outgoing traffic separately. Return traffic won’t be allowed unless we set up a rule for it. |
 
-## What AWS Security Groups and NACLs Have in Common?
+## What AWS Security Groups and AWS NACLs Have in Common?
 
 | **Feature**                      | **Description**                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------|
