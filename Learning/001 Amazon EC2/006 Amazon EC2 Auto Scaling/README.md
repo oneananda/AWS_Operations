@@ -50,17 +50,17 @@ EC2 Auto Scaling helps you automatically adjust the number of Amazon EC2 instanc
 
 ### 1. Target Tracking Scaling Policy
    - **What It Is**: Think of this policy like your air conditioner’s thermostat. You set a desired target (like temperature), and it adjusts automatically to maintain that target. In this case, the target could be something like CPU utilization.
-   - **How It Works**: You specify a target value for a metric (e.g., keeping CPU utilization at 50%). Auto Scaling will then add or remove instances to keep the metric as close to the target value as possible.
+   - **How It Works**: Specify a target value for a metric (e.g., keeping CPU utilization at 50%). Auto Scaling will then add or remove instances to keep the metric as close to the target value as possible.
    - **When To Use**: Use this when you want to maintain a consistent performance level, like keeping your application response times stable during fluctuating traffic.
 
 ### 2. Step Scaling Policy
    - **What It Is**: Step Scaling is like managing an event where you add more chairs or plates based on the number of guests arriving. It allows you to scale incrementally based on how far your metric deviates from a set threshold.
-   - **How It Works**: You define scaling actions based on thresholds. For example, if CPU usage exceeds 60% but is below 80%, you add 2 instances. If it goes beyond 80%, you add 5 instances. This helps manage varying loads with more control.
+   - **How It Works**: Define scaling actions based on thresholds. For example, if CPU usage exceeds 60% but is below 80%, you add 2 instances. If it goes beyond 80%, you add 5 instances. This helps manage varying loads with more control.
    - **When To Use**: This is best for situations where demand can vary widely, like sales promotions or peak usage periods, and you need more granular control over scaling actions.
 
 ### 3. Scheduled Scaling Policy
    - **What It Is**: Scheduled Scaling is like having a timetable that adjusts the number of resources based on expected usage patterns, much like increasing staff during rush hours in a restaurant.
-   - **How It Works**: You set a scaling schedule based on predictable changes in demand, such as increasing instances during business hours and reducing them after hours.
+   - **How It Works**: Set a scaling schedule based on predictable changes in demand, such as increasing instances during business hours and reducing them after hours.
    - **When To Use**: Ideal for applications with predictable traffic patterns, such as peak times during the day or specific days of the week.
 
 ### Additional Feature: Predictive Scaling
@@ -69,13 +69,15 @@ EC2 Auto Scaling helps you automatically adjust the number of Amazon EC2 instanc
 
 ### Target Tracking Scaling Policy and Step Scaling Policy sounds the same ?
 
-Yes, both sounds the same, but infact both are having a different set of uses
+Yes, both sounds the same, `but infact both are having a different set of uses`
 
-Imagine you have a web application running on EC2 instances, and your goal is to keep the CPU utilization balanced. The application experiences varying traffic throughout the day, sometimes spiking during peak hours and dipping during off-hours.
+Imagine we have a web application running on EC2 instances, and our goal is to keep the `CPU utilization balanced`. The application experiences varying traffic throughout the day, sometimes spiking during peak hours and dipping during off-hours.
 
 **Target Tracking Scaling Policy**
 
-**Setup:** You configure the Auto Scaling group to target a CPU utilization of 50%.
+**Setup:** 
+
+Configure the Auto Scaling group to target a CPU utilization of 50%.
 
 **How It Works:**
 
@@ -85,16 +87,18 @@ Imagine you have a web application running on EC2 instances, and your goal is to
 **Step Scaling Policy**
 
 **Setup:** 
-You configure specific steps based on CPU utilization thresholds:
+
+Configure specific steps based on CPU utilization thresholds:
 - Add 1 instance if CPU utilization exceeds 60%.
 - Add 3 instances if CPU utilization exceeds 80%.
 - Remove 1 instance if CPU utilization drops below 40%.
 
 **How It Works:**
+
 - If CPU utilization exceeds 60% but is below 80%, one additional instance is launched.
 - If CPU utilization exceeds 80%, three additional instances are launched to handle the increased load.
 - If CPU utilization drops below 40%, one instance is terminated.
 
-So, Target Tracking Scaling Policy is simple, whereas the Step Scaling Policy will provide the user more granular controls with multiple steps.
+So, `Target Tracking Scaling Policy is simple`, whereas the `Step Scaling Policy will provide the user more granular controls` with multiple steps.
 
 ---
