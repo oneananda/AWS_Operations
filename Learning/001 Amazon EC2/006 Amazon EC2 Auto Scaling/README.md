@@ -75,11 +75,26 @@ Imagine you have a web application running on EC2 instances, and your goal is to
 
 **Target Tracking Scaling Policy**
 
-Setup: You configure the Auto Scaling group to target a CPU utilization of 50%.
+**Setup:** You configure the Auto Scaling group to target a CPU utilization of 50%.
 
 **How It Works:**
 
 - If CPU utilization goes above 50%, Auto Scaling will automatically add instances to bring the CPU usage back down.
 - If CPU utilization drops below 50%, Auto Scaling will reduce the number of instances.
+
+**Step Scaling Policy**
+
+**Setup:** 
+You configure specific steps based on CPU utilization thresholds:
+- Add 1 instance if CPU utilization exceeds 60%.
+- Add 3 instances if CPU utilization exceeds 80%.
+- Remove 1 instance if CPU utilization drops below 40%.
+
+**How It Works:**
+- If CPU utilization exceeds 60% but is below 80%, one additional instance is launched.
+- If CPU utilization exceeds 80%, three additional instances are launched to handle the increased load.
+- If CPU utilization drops below 40%, one instance is terminated.
+
+So, Target Tracking Scaling Policy is simple, whereas the Step Scaling Policy will provide the user more granular controls with multiple steps.
 
 ---
