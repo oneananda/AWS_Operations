@@ -115,7 +115,7 @@ Bare Metal Workloads on AWS EC2 provide the highest level of performance and con
 
 Running hypervisor-free environments for high-performance computing, such as financial trading platforms that require direct access to hardware for low-latency processing.
 
-**3rd Party Components: **
+**3rd Party Components:**
 
 - VMware ESXi (for on-premises to cloud migration), 
 - Oracle Real Application Clusters (RAC) for database workloads.
