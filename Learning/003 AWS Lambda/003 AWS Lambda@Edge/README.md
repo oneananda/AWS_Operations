@@ -10,7 +10,7 @@ Up to 5 seconds
 
 ### What I can achieve if the max execution time is 5 seconds ?
 
-With the maximum execution time of 5 seconds in Lambda@Edge, you can achieve several key functionalities, especially for use cases that require quick, low-latency processing directly at the edge of the AWS network
+With the maximum execution time of 5 seconds in `Lambda@Edge`, you can achieve several key functionalities, especially for use cases that require quick, low-latency processing directly at the edge of the AWS network.
 
 **Use cases:**
 
@@ -18,3 +18,11 @@ With the maximum execution time of 5 seconds in Lambda@Edge, you can achieve sev
 
 Token Validation: Validate JSON Web Tokens (JWT) or other tokens to authorize requests before they reach your origin server.
 Session Management: Check user session validity and enforce access controls at the edge, reducing the load on your origin server.
+
+### What if my process exceeds 5 seconds ?
+
+Have a `Backup Plan` for Handling Lambda@Edge Failures
+
+- Graceful Fallback to Origin Server:
+- Serve Default or Cached Content: (Not recommended for data intensive applications)
+- Have secondary AWS Lambda in Regions:
