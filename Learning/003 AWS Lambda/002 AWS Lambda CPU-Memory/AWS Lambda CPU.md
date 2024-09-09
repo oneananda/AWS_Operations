@@ -1,4 +1,4 @@
-# AWS Lambda CPU allocation, Limitations, Implications
+# AWS Lambda CPU - Allocations, Limitations, Implications
 
 ### AWS Lambda Memory and CPU Allocation Relationship
 
