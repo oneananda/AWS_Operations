@@ -1,4 +1,4 @@
-# AWS Lambda CPU / Memory
+# AWS Lambda CPU / Memory / Timeouts
 
 ## What are the memory limits for AWS Lambda?
 The memory allocated to a Lambda function can be set between **128 MB and 10,240 MB (10 GB)** in increments of 1 MB.
