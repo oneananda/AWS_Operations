@@ -16,3 +16,4 @@ Additionaly we can do
 - Security Groups: Acts as a virtual firewall for controlling inbound and outbound traffic to your instances.
 - Network Access Control Lists (NACLs): An additional layer of security that controls traffic at the subnet level.
 - VPC Peering: Allows direct connectivity between two VPCs, either in the same or different AWS accounts, without using an Internet gateway or VPN connection.
+
