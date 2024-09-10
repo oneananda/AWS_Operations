@@ -25,3 +25,7 @@ E2E encryption ensures that data remains encrypted from the client's browser to 
 **Cross-Zone Load Balancing**
 
 ALB has cross-zone load balancing enabled by default, which allows it to distribute incoming traffic evenly across all registered targets in different Availability Zones.
+
+**Elastic IP Address (EIP)**
+
+An Elastic IP address is a static, public IPv4 address that you can allocate to your AWS account. You can associate an Elastic IP with an EC2 instance
