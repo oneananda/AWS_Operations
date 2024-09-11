@@ -4,6 +4,10 @@ Elastic IPs are a static, public IPv4 address that we can allocate to AWS accoun
 
 ## Use cases
 
+**Maintaining Service Continuity During Instance Failures**
+
+If the EC2 instance fails due to any reason, we can associate the `Elastic IP` to new one to maintain the business continuity.
+
 **Public-Facing API Endpoints**
 
 When hosting an API that needs to be accesed by clients globally, and we want the endpoints remains same (`Consistent IP address`) even if the backend infrascructure changes.
