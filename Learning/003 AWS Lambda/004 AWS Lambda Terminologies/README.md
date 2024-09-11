@@ -15,3 +15,6 @@ Download the function code and any necessary libraries.
 Initialize the runtime (e.g., Node.js, Python, Java, etc.).
 Run the initialization code (e.g., connecting to databases, loading configurations).
 
+## Warm Start
+
+Reuses initialized containers
