@@ -1,5 +1,16 @@
 # Request and Response Handling with `AWS CloudFront` and `Lambda@Edge`
 
+## Scenario
+
+Explain how to integrate `Lambda@Edge` in each of the stages in `CloudFront`
+
+**Stages:**
+
+- Viewer Request: CloudFront receives the request from the viewer and triggers a Lambda function to process this initial request.
+- Origin Request: Before sending the request to the origin server, CloudFront calls another Lambda function to modify or process the request.
+- Origin Response: After receiving the response from the origin, CloudFront invokes a Lambda function to process or modify the response.
+- Viewer Response: Before sending the final response back to the viewer, CloudFront calls a Lambda function to make any last modifications.
+
 ## Steps for the scenario 
 
 [`AWS CloudFront` and `Lambda@Edge` UML](https://github.com/oneananda/AWS_Operations/blob/main/Learning/00N%20AWS%20CloudFront/001%20CloudFront%20with%20Lambda%40Edge/Request%20and%20Response%20Handling%20with%20AWS%20CloudFront%20and%20Lambda%40Edge%20-%20A%20Sequence%20Diagram%202.png)
