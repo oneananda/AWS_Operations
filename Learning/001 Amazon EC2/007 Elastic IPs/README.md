@@ -2,6 +2,14 @@
 
 Elastic IPs are a static, public IPv4 address that we can allocate to AWS account. These addresses are associated with the AWS account, not directly tied to a specific instance, making them flexible and reusable across different instances or other AWS resources.
 
+## How Elastic IPs Work
+
+- **Allocation:**  Process of allocating a Elastic IP
+- **Association:** Associating the Elastic IP to a EC2 instance
+- **Re-association:** Change the association to another EC2 instance if it fails
+- **Release:** Release the allocation
+
+
 ## Use cases
 
 **Maintaining Service Continuity During Instance Failures**
