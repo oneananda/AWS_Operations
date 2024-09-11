@@ -1,6 +1,8 @@
-# Request and Response Handling with AWS CloudFront and Lambda@Edge
+# Request and Response Handling with `AWS CloudFront` and `Lambda@Edge`
 
-## Steps for the scenario
+## Steps for the scenario 
+
+[`AWS CloudFront` and `Lambda@Edge` UML](https://github.com/oneananda/AWS_Operations/blob/main/Learning/00N%20AWS%20CloudFront/001%20CloudFront%20with%20Lambda%40Edge/Request%20and%20Response%20Handling%20with%20AWS%20CloudFront%20and%20Lambda%40Edge%20-%20A%20Sequence%20Diagram%202.png)
 
 - Viewer Request (Step 1): The viewer sends a request to CloudFront.
 - Viewer Request Execution (Step 2): CloudFront invokes a Lambda function to handle the viewer request.
