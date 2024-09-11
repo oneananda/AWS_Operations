@@ -23,3 +23,14 @@ AWS Lambda allows you to run code for virtually any type of application or backe
 **Implementation Highlights:**
 - Trigger: HTTP request via API Gateway.
 - Services: AWS Lambda, Amazon API Gateway, DynamoDB for data storage.
+
+### 3. Data Transformation
+
+**Description:** Perform data processing and transformation tasks on data streams in real-time.
+
+**Example:** Transform and store log data from IoT devices for further analysis.
+
+**Implementation Highlights:**
+
+Trigger: Data ingestion from Amazon Kinesis Data Streams or DynamoDB Streams.
+Services: AWS Lambda, Amazon Kinesis, DynamoDB, Amazon S3 for data storage.
