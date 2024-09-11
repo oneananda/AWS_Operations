@@ -22,5 +22,5 @@ If the application is already configured to serve the static content via AWS Clo
 - Fetching from the Origin (If the image is not available in CF Cache)
 - Caching the Image at the Edge
 - Serving the Image to the User
-- Serving same image for Subsequent Requests
+- Serving same image for Subsequent Requests (even if it is coming from a differernt requests, duly authenticated)
 
