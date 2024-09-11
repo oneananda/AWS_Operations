@@ -34,3 +34,14 @@ AWS Lambda allows you to run code for virtually any type of application or backe
 
 Trigger: Data ingestion from Amazon Kinesis Data Streams or DynamoDB Streams.
 Services: AWS Lambda, Amazon Kinesis, DynamoDB, Amazon S3 for data storage.
+
+### 4. Batch Processing
+
+**Description:** Run batch jobs to process large volumes of data efficiently.
+
+**Example:** Perform nightly ETL (Extract, Transform, Load) tasks on large datasets.
+
+**Implementation Highlights:**
+
+Trigger: Scheduled via EventBridge or invoked manually.
+Services: AWS Lambda, AWS Glue for ETL jobs, Amazon S3 for data storage.
