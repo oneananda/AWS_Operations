@@ -4,15 +4,17 @@ In a given EC2 instance in Subnet which is in turn present in a VPC the communic
 
 ENIs are fundamental to network connectivity for EC2 instances within AWS, an ENI acts as a virtual network card that connects an EC2 instance to the network.
 
-**Detailed Explaination:**
+---
 
-Consider we have 2 VPCs in the same region, `VPC1` and `VPC2`
+## `Detailed Example:`
+
+**Consider we have 2 VPCs in the same region, `VPC1` and `VPC2`**
 
 VPC1 is having 2 subnets `SN1a (Public)`, `SN1b (Private)`
 
 VPC2 is having 2 subnets `SN2a (Public)`, `SN2b (Private)`
 
-ANIs are enabling connection between 
+**ANIs are enabling connection combinations like below** 
 
 ## `SN1a (Public) → Public Network`
 
