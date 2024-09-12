@@ -39,3 +39,7 @@ A bastion server, also known as a jump box, used to connect to a private resourc
 SSH, or Secure Shell, is like a secure, digital key that lets you safely connect to and control a computer or server over the internet. Imagine it as a private, encrypted tunnel that you create between your computer and another device, allowing you to send commands, transfer files, or manage that device remotely without anyone being able to eavesdrop.
 
 It's commonly used by developers and system administrators to securely access servers, troubleshoot issues, or manage web applications. SSH ensures that everything you do during this connection, including your login credentials and the commands you type, is kept private and secure from hackers or prying eyes.
+
+**RDP (Remote Desktop Protocol)**
+
+Similiar to SSH, this is used to safely connect to remote server.
