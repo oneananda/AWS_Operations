@@ -34,6 +34,8 @@ An Elastic IP address is a static, public IPv4 address that you can allocate to 
 
 A bastion server, also known as a jump box, used to connect to a private resources from the box.
 
+This can be done either by SSH or RDP.
+
 **SSH (Secure Shell)**
 
 SSH, or Secure Shell, is like a secure, digital key that lets you safely connect to and control a computer or server over the internet. Imagine it as a private, encrypted tunnel that you create between your computer and another device, allowing you to send commands, transfer files, or manage that device remotely without anyone being able to eavesdrop.
