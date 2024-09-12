@@ -11,7 +11,7 @@
   - A smaller prefix length (e.g., /16) means a larger address range.
   - A larger prefix length (e.g., /28) means a smaller address range.
 
-### Explaination of the calculation 
+### Explaination of the calculation of address range 
 
 **Take the example `192.168.1.0/24`**
 
@@ -22,7 +22,7 @@
   - 1 -> 00000001
   - 0 -> 00000000
 
-8 x 4 = 32
+`8 x 4 = 32`
 
 **What Does /24 Mean?**
 
@@ -51,11 +51,11 @@ Again there is a catch here
 
 `For 192.168.1.0/24:`
 
-Network Address: 192.168.1.0
+`Network Address: 192.168.1.0
 First Usable Address: 192.168.1.1
 ...
 Last Usable Address: 192.168.1.254
-Broadcast Address: 192.168.1.255
+Broadcast Address: 192.168.1.255`
 
 The first address is reserved for the network itself, and the last address is reserved as a broadcast address, leaving `254 usable addresses` for devices in that network.
 
