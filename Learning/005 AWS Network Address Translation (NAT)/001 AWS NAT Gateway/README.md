@@ -1,4 +1,4 @@
-# NAT Gateway
+# AWS NAT Gateway
 
 This is used to provide the internet access to resources in private Subnets, such as EC2 instances.
 
