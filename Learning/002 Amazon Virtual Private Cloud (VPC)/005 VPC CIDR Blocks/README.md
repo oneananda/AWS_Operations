@@ -51,11 +51,17 @@ Again there is a catch here
 
 `For 192.168.1.0/24:`
 
-`Network Address: 192.168.1.0
+```
+Network Address: 192.168.1.0
+
 First Usable Address: 192.168.1.1
+
 ...
+
 Last Usable Address: 192.168.1.254
-Broadcast Address: 192.168.1.255`
+
+Broadcast Address: 192.168.1.255
+```
 
 The first address is reserved for the network itself, and the last address is reserved as a broadcast address, leaving `254 usable addresses` for devices in that network.
 
