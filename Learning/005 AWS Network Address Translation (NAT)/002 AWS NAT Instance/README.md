@@ -16,4 +16,4 @@ And this is loosing the key functionality that NAT Gateway is providing
 
 - We can fully customize this
 - We can apply customized security aspects 
-- 
+
