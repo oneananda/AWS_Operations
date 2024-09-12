@@ -6,7 +6,7 @@ ENIs are fundamental to network connectivity for EC2 instances within AWS, an EN
 
 ---
 
-## `Detailed Example:`
+## `ENI Detailed Example:`
 
 **Consider we have 2 VPCs in the same region, `VPC1` and `VPC2`**
 
