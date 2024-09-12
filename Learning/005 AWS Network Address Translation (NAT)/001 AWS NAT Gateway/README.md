@@ -12,7 +12,7 @@ NAT Gateway is
 - High performant
 - Secure by preventing inbound connections
 
-**Limitations:**
+**Limitations of AWS NAT Gateway:**
 
-- Cannot be used as a bastion server for SSH connections.
+- Cannot be used as a bastion server for SSH connections. (This is due to the restriction of inbound connections)
 - Static IP addresses are assigned by AWS, and Elastic IP addresses can be associated.
