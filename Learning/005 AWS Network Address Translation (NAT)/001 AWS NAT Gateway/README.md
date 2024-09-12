@@ -11,3 +11,8 @@ NAT Gateway is
 - Auto Scablable
 - High performant
 - Secure by preventing inbound connections
+
+**Limitations:**
+
+- Cannot be used as a bastion server for SSH connections.
+- Static IP addresses are assigned by AWS, and Elastic IP addresses can be associated.
