@@ -1,4 +1,4 @@
-# Network Address Translation (NAT)
+# General - Network Address Translation (NAT) 
 
 ## Overview
 Network Address Translation (NAT) is a technique used in networks to modify IP address information in packet headers while they are in transit across a traffic routing device. NAT is essential for connecting multiple devices on a private network to external networks like the internet using a single public IP address.
