@@ -22,3 +22,15 @@ We can implement header-based routing to manage tenant-specific features or A/B 
 
 For example, headers like `X-Tenant-ID` or `X-Feature-Flag` can direct traffic to different versions of a service.
 
+
+### Combining Path and Host Conditions
+
+We can combine path and host conditions to create more specific routing rules. For example, you could route traffic to a particular service based on both the host and path, such as routing requests from api.example.com/orders/* to a specific backend service.
+
+**Example Configuration in ALB:**
+
+Host condition: api.example.com
+Path condition: /v1/orders/*
+Target Group: API V1 Orders Service
+
+This configuration routes all requests to api.example.com with paths starting with /v1/orders/ to a designated backend service, allowing for more granular control over traffic routing in the application architecture.
