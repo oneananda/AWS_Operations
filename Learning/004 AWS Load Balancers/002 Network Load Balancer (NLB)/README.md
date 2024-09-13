@@ -23,3 +23,18 @@ Suppose you have a web application that needs to handle a high volume of incomin
          +-------------------+ +-------------------+ +-------------------+
          | Web App (Port 80) | | Web App (Port 80) | | Web App (Port 80) |
          +-------------------+ +-------------------+ +-------------------+
+
+### Key Features of Network Load Balancer (NLB):
+
+**High Performance and Low Latency:**
+
+- NLB is designed for high performance and can handle sudden and volatile traffic patterns. It is capable of scaling automatically to manage millions of requests per second.
+
+**Static IP Addresses and Elastic IPs:**
+
+- NLB provides a single static IP per Availability Zone, simplifying DNS resolution and security configurations.
+- It can also use Elastic IPs, which are static IP addresses associated with your AWS account, making it easier to set up firewall rules.
+
+**Cross-Zone Load Balancing:**
+
+- NLB can distribute incoming traffic across multiple Availability Zones, improving availability and fault tolerance. Cross-zone load balancing can be enabled or disabled based on the application needs.
