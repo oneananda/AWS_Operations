@@ -52,3 +52,9 @@ Suppose you have a web application that needs to handle a high volume of incomin
 - Amazon EC2 Instances: Can distribute traffic to one or more AZs (Acailablity Zones), also it will route based on the health of the instance.
 - IP addresses as targets: Set IP address as target, later switch to different services for that IP.
 - Amazon ECS Containers: Usually containers will run on the fly, the dynamic nature, dynamic IPs, those will support.
+
+### General algoritham for NLBs
+
+- Round Robin or Least Connection: By default it uses Round Robin, but gives priority to least connection.
+- Based on Health Checks: Terminate and re-route traffic if any health check is failing in any of the services.
+- Zonal Affinity: Gives priority within Availalblity Zones to reduce latency and maximize throughput.
