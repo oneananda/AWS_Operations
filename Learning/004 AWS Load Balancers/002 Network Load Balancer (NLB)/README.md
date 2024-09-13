@@ -43,4 +43,7 @@ Suppose you have a web application that needs to handle a high volume of incomin
 
 - This is about maintaining the original client’s IP address in requests so that the receiving server can see where the request originated from.
 
+**Supporting Targets with Dynamic IP Addresses** 
+
+- This is about the NLB's ability to register and route traffic to targets whose IPs might change dynamically, such as containers, without needing to reconfigure the load balancer manually.
 
