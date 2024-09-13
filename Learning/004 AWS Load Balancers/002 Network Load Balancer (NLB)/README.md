@@ -38,3 +38,9 @@ Suppose you have a web application that needs to handle a high volume of incomin
 **Cross-Zone Load Balancing:**
 
 - NLB can distribute incoming traffic across multiple Availability Zones, improving availability and fault tolerance. Cross-zone load balancing can be enabled or disabled based on the application needs.
+
+**Preserving Client IP** 
+
+- This is about maintaining the original client’s IP address in requests so that the receiving server can see where the request originated from.
+
+
