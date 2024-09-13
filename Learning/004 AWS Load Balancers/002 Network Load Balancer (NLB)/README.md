@@ -11,7 +11,7 @@ Suppose you have a web application that needs to handle a high volume of incomin
 - The NLB uses the round-robin method (or other algorithms if configured) to balance the requests evenly across the healthy instances.
 - If one of the instances becomes unhealthy (fails the health checks), the NLB stops sending traffic to that instance until it recovers.
 
-### Diagram depicting
+### Diagram depicting the above scenario
                       +------------------------+
                       |   Network Load Balancer |
                       +-----------+------------+
