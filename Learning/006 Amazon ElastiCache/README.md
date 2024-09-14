@@ -32,7 +32,7 @@ But, if the popular or frequently used books are placed in a center table means,
 
 ### Cluster Mode
 
-Cluster mode in `Amazon ElastiCache (specifically with Redis)` is like dividing your work among a group of people to get things done faster and more efficiently. Instead of putting all your data in one place, cluster mode splits the data across multiple smaller units called nodes, and these nodes work together as a team.
+Cluster mode in `Amazon ElastiCache (specifically with Redis)` is like dividing the work among a group of people to get things done faster and more efficiently. Instead of putting all the data in one place, cluster mode splits the data across multiple smaller units called nodes, and these nodes work together as a team.
 
 `Cluster Mode Example:`
 
@@ -50,6 +50,15 @@ For instance, we could have
 - another managing user sessions, 
 - and another for shopping cart details.
 
+### Sharding
+
+Sharding is like breaking the given data to more meaningful, managable pieces
+
+For example:
+
+For the product storage, we can store the prodcuts starting from A-G in one shard and H-T in another and so on,
+
+When the product is being searched, the appropriate Shard will be called instead of the whole product list.
 
 
 
