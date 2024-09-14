@@ -4,3 +4,32 @@
 
 AWS WAF helps defend against common threats like SQL injection, cross-site scripting (XSS), and other OWASP Top 10 security risks.
 
+### Rules
+
+- Customizable : WAF helps us to customize the rules.
+- Predefined : Lot of predefined rules are available at our disposal.
+
+### Integeration
+
+WAF can be integrated to Amazon CloudFront (CDN), Application Load Balancer (ALB), and API Gateway.
+
+### Features
+
+- Rule Groups: Collections of predefined rules.
+- Web ACLs (Access Control Lists): These are used to define which traffic is allowed or blocked.
+- Bot Control: AWS WAF offers bot control.
+- Rate-Based Rules: Protect against denial-of-service (DoS) attacks by limiting the rate of requests from a single IP address.
+
+### How It Works
+
+
+
+### Limitations
+
+
+### Twisted exam questions
+
+- Questions may ask about its use for network-level attacks, which it doesn't handle.
+
+
+
