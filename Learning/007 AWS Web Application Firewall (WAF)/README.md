@@ -22,10 +22,19 @@ WAF can be integrated to Amazon CloudFront (CDN), Application Load Balancer (ALB
 
 ### How It Works
 
-
+1. Request sent to the application.
+2. AWS WAF checks it against the rules defined in your Web ACL. 
+3. The rules can be allow, block.
+4. If the rule matching a SQL Injection pattern, then it will block.
 
 ### Limitations
 
+Only protects application layer; not effective for non-web or network-layer attacks.
+
+**Not supportive examples:**
+
+- DDoS Attacks at Layer 3/4
+- Protocol Attacks: Attacks like SYN floods
 
 ### Twisted exam questions
 
