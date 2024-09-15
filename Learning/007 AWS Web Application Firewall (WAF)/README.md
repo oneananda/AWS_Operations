@@ -40,5 +40,9 @@ Only protects application layer; not effective for non-web or network-layer atta
 
 - Questions may ask about its use for network-level attacks, which it doesn't handle.
 
+### Use cases
 
+- Application Protection: Defend web applications from vulnerabilities and threats, enhancing overall security posture.
+- API Security: Secure APIs from abusive behavior, such as high request rates or malicious input patterns.
+- Bot Mitigation: Manage bot traffic, allowing beneficial bots like search engine crawlers while blocking malicious ones.
 
