@@ -4,6 +4,7 @@
 **Question:** In AWS API Gateway, which method would you use to handle complex request transformations that involve converting XML payloads to JSON before forwarding to an AWS Lambda backend?
 
 **Options:**
+
 A. Use AWS Step Functions to handle transformations.  
 B. Use Mapping Templates in the Integration Request.  
 C. Use AWS Lambda authorizers to transform the payload.  
@@ -20,6 +21,7 @@ D. Use AWS Glue to process and transform data before sending it to Lambda.
 **Question:** Which of the following best describes how to enable detailed logging of incoming requests and backend responses in AWS API Gateway?
 
 **Options:**
+
 A. Enable logging in the API Gateway stage settings and use AWS CloudTrail.  
 B. Enable logging in the AWS Lambda function attached to the API Gateway.  
 C. Enable detailed CloudWatch logging in the API Gateway stage settings.  
@@ -36,6 +38,7 @@ D. Configure VPC Flow Logs to capture API traffic.
 **Question:** How can you implement a canary release in AWS API Gateway to safely deploy new versions of your API?
 
 **Options:**
+
 A. Create a new stage in API Gateway and deploy the new version there.  
 B. Use AWS CodeDeploy to manage canary releases directly in API Gateway.  
 C. Enable canary settings in the deployment stage of API Gateway.  
@@ -52,6 +55,7 @@ D. Use AWS CloudFront to perform the canary release by splitting traffic.
 **Question:** Which AWS API Gateway feature allows you to secure your APIs by restricting access based on client usage, such as limiting the number of requests or controlling the rate of requests?
 
 **Options:**
+
 A. Enable AWS WAF (Web Application Firewall) with API Gateway.  
 B. Use Usage Plans and API Keys.  
 C. Set up AWS Shield for DDoS protection.  
@@ -68,6 +72,7 @@ D. Use AWS IAM roles and policies.
 **Question:** In AWS API Gateway, which of the following methods can be used to minimize the cold start latency when using Lambda functions as the backend?
 
 **Options:**
+
 A. Increase the memory size of the Lambda function.  
 B. Enable caching in API Gateway.  
 C. Use Provisioned Concurrency for the Lambda function.  
