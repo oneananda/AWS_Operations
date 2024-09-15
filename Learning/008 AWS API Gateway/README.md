@@ -29,6 +29,8 @@ Imagine you have a shop, and people want to buy things from you. Instead of lett
 
 Think of AWS API Gateway like a traffic controller for your data and services. It decides which data should go where and ensures that only the right vehicles (or users) can access the highway (your services). It's like having a guard at the entrance of your colony who checks ID cards before letting anyone enter. AWS API Gateway does the same for your backend services, making sure everything is organized, secure, and working smoothly without you needing to invest heavily in infrastructure.
 
+---
+
 ### What AWS API Gateway Can Do / Can't Do but Achievable via Other AWS Services
 
 
@@ -69,4 +71,39 @@ This expanded table should give you a clearer picture of how AWS API Gateway fit
 ### 9. **API Gateway as a Proxy:**
 
 ### 10. **Private APIs for Internal Applications:**
+
+---
+
+## AWS API Gateway Limitations
+
+1. **Payload Size Limits:** You can’t send or receive really large files—API Gateway has a cap of 10 MB for REST APIs. For WebSocket APIs, it's even smaller, just 128 KB.
+
+2. **Timeout Constraints:** If your backend takes longer than 29 seconds to respond, API Gateway will cut off the connection. So, it’s not great for things that need more time to process.
+
+3. **Request and Response Limits:** There’s a cap on how many requests you can handle per second by default (10,000), and if you suddenly get a lot of traffic, you might hit limits and start rejecting requests.
+
+4. **Integration Latency:** Adding API Gateway can slow things down a bit, especially when it connects to AWS Lambda functions, which can have startup delays.
+
+5. **Throttling and Rate Limits:** Even if your backend can handle more, API Gateway might throttle (slow down) requests if they go over the set limits, which can affect user experience.
+
+6. **Limited Support for Certain Protocols:** It works well with REST, HTTP, and WebSocket APIs, but if you need something like gRPC or SOAP, you’re out of luck without adding extra workarounds.
+
+7. **Complexity in Transformations:** Changing the data format from one type to another (like JSON to XML) can get tricky and involves learning a special language (Velocity Template Language).
+
+8. **Limited Error Handling:** Error handling is quite basic, so if something goes wrong, it might not give you the detailed feedback you need to fix the problem quickly.
+
+9. **Vendor Lock-In:** Since it’s tightly connected with AWS, moving your API to another platform isn’t straightforward and could mean a lot of rework.
+
+10. **Cost Considerations at Scale:** Costs can add up quickly with high traffic, especially if you’re using extra features like caching or custom domain names.
+
+11. **Cache Management Limitations:** The caching options aren’t very flexible, which might not always fit perfectly with what your app needs to perform best.
+
+12. **Security Configuration Complexity:** Setting up security, like permissions or custom authentication, can get complicated and time-consuming, making it easy to make mistakes.
+
+13. **Cold Start Latency with Lambda Integrations:** When using Lambda, sometimes there’s a delay (cold start) when the function hasn’t been run for a while, which can slow down your API responses unexpectedly.
+
+14. **Monitoring and Debugging Challenges:** Finding and fixing issues can be tough because the built-in tools are limited, often requiring extra setup with AWS CloudWatch or other services.
+
+15. **Lack of Built-In Support for SOAP APIs:** If you’re working with older systems that use SOAP, API Gateway doesn’t natively support it, meaning you’ll have to create custom solutions or add a layer to handle it.
+
 
