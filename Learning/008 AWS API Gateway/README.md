@@ -45,8 +45,6 @@ Think of AWS API Gateway like a traffic controller for your data and services. I
 | **8. Cost-Effective:** Pay-per-use model keeps costs down, especially for startups. | **8. Complex Data Transformation:** Limited in transforming complex data formats. | Use **AWS Lambda** or **AWS Glue** for complex data transformation tasks. |
 | **9. API Versioning:** Manage different versions of your API easily. | **9. Handle Long-Running Processes:** Not suitable for managing long-running tasks directly. | Use **AWS Step Functions** or **Amazon SQS** with **Lambda** for long-running processes. |
 
-This expanded table should give you a clearer picture of how AWS API Gateway fits into the broader AWS ecosystem, showing what it can do, its limitations, and how other AWS services can fill those gaps!
-
 ---
 
 ##  AWS API Gateway Use cases
