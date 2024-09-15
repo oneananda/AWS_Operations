@@ -92,3 +92,24 @@ SQL injection match conditions are specifically designed to detect and block SQL
 - **D) String match condition:** While it can identify specific strings, it is not specialized for SQL injection patterns and may miss more sophisticated attacks.
 
 ---
+
+### Question 12
+**Question:** You want to allow requests only from certain IP addresses while blocking all others. Which AWS WAF rule would you use?
+
+**Options:**
+- A) Size constraint rule
+- B) IP set match condition
+- C) Managed rule group
+- D) Byte match condition
+
+**Answer:** B) IP set match condition
+
+**Explanation on right answer:**  
+IP set match conditions allow you to specify IP addresses or ranges that are allowed or blocked, making it ideal for filtering requests based on IP.
+
+**Explanation on why the other options are not correct:**  
+- **A) Size constraint rule:** This rule filters based on the size of the request components, not IP addresses.  
+- **C) Managed rule group:** These are predefined rule sets for common vulnerabilities and don’t directly handle IP-based filtering unless customized.  
+- **D) Byte match condition:** This rule inspects parts of the request for specific byte sequences, not IP addresses.
+
+---
