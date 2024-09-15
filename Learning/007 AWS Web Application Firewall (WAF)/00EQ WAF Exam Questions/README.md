@@ -156,3 +156,24 @@ AWS WAF Bot Control is specifically designed to identify and manage bot traffic,
 
 ---
 
+### Question 15
+**Question:** You need to create an alert system for when AWS WAF blocks requests due to suspicious activity. Which AWS service should you use to achieve this?
+
+**Options:**
+- A) AWS Lambda
+- B) Amazon SNS (Simple Notification Service)
+- C) AWS Config
+- D) Amazon CloudWatch with Amazon SNS
+
+**Answer:** D) Amazon CloudWatch with Amazon SNS
+
+**Explanation on right answer:**  
+Amazon CloudWatch can be used to monitor AWS WAF metrics and set alarms that notify you when certain conditions, like blocked requests, occur.
+
+**Explanation on why the other options are not correct:**  
+- **A) AWS Lambda:** While it can process data, it isn’t directly used for monitoring and alerting; it would need to be triggered by another service like CloudWatch.  
+- **B) Amazon SNS:** SNS sends notifications but relies on triggers from monitoring services like CloudWatch.  
+- **C) AWS Config:** This service monitors AWS resource configurations, not WAF traffic or rule actions.
+
+---
+
