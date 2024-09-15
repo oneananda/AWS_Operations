@@ -29,3 +29,14 @@ We can monitor, change, update the ACLs from a single place for all the tenents.
 ### Step 3 : Monitoring & Reporting
 
 We can attach AWS CloudWatch to get the insights of traffic threats and set alarams accordingly.
+
+
+### Step 4 : Automation 
+
+- We can automate the creation of Web ACLs by connecting AWS WAF with SDKs, CloudFormation, for example, if any new tenent is signing up the default ACLs will be created accordinly using this combination.- 
+- AWS Lambda can also be used to automate dynamic changes, like adding an IP address to a block list when suspicious activity is detected.
+
+
+
+---
+
