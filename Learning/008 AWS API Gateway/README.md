@@ -2,7 +2,7 @@
 
 `AWS API Gateway` is a managed service from `Amazon Web Services` that allows to `create, publish, maintain, and secure APIs` (Application Programming Interfaces) at any scale. Imagine it as a bridge between the users or clients and the backend services we have, like AWS Lambda functions, EC2 instances, or other HTTP endpoints.
 
-Please note : This can't be used as a complete backend solution, we need to add AWS Lambda to AWS API Gateway to have it as a backend.
+`Please note :` This can't be used as a complete backend solution, we need to add AWS Lambda to AWS API Gateway to have it as a backend.
 
 ```
 Imagine you have a shop, and people want to buy things from you. Instead of letting everyone directly into your shop, you set up a counter outside where someone checks what people want, takes their order, and brings them what they need. This way, your shop stays organized, and you can control who gets what.
@@ -32,7 +32,6 @@ Think of AWS API Gateway like a traffic controller for your data and services. I
 ---
 
 ### What AWS API Gateway Can Do / Can't Do but Achievable via Other AWS Services
-
 
 | **What AWS API Gateway Can Do**                                | **What AWS API Gateway Can't Do**                                 | **Achievable via Other AWS Services**                       |
 |---------------------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------|
@@ -126,4 +125,4 @@ We can use API Gateway’s built-in mock integration to test your APIs without set
 
 15. **Lack of Built-In Support for SOAP APIs:** If you’re working with older systems that use SOAP, API Gateway doesn’t natively support it, meaning you’ll have to create custom solutions or add a layer to handle it.
 
-
+---
