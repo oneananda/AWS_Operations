@@ -113,3 +113,24 @@ IP set match conditions allow you to specify IP addresses or ranges that are all
 - **D) Byte match condition:** This rule inspects parts of the request for specific byte sequences, not IP addresses.
 
 ---
+
+### Question 13
+**Question:** You have configured AWS WAF with rate-based rules, but legitimate users are occasionally blocked. What is the best action to take?
+
+**Options:**
+- A) Increase the rate limit across all rate-based rules.
+- B) Disable all rate-based rules.
+- C) Fine-tune rate limits based on traffic analysis.
+- D) Replace rate-based rules with IP set rules.
+
+**Answer:** C) Fine-tune rate limits based on traffic analysis.
+
+**Explanation on right answer:**  
+Fine-tuning the rate limits based on actual traffic patterns helps to balance security and accessibility, ensuring legitimate traffic isn't incorrectly blocked.
+
+**Explanation on why the other options are not correct:**  
+- **A) Increase the rate limit across all rate-based rules:** A blanket increase might let through unwanted traffic and won’t specifically address legitimate user issues.  
+- **B) Disable all rate-based rules:** This would leave your application vulnerable to flooding attacks and defeats the purpose of having these rules.  
+- **D) Replace rate-based rules with IP set rules:** IP set rules do not handle request rates; they filter based on IP addresses, which doesn’t address the issue of legitimate traffic rates.
+
+---
