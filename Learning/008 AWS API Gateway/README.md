@@ -4,9 +4,10 @@
 
 ```
 Imagine you have a shop, and people want to buy things from you. Instead of letting everyone directly into your shop, you set up a counter outside where someone checks what people want, takes their order, and brings them what they need. This way, your shop stays organized, and you can control who gets what.
-```
+
 
 `AWS API Gateway` is like that counter for your apps. It sits between the users (or other apps) and your backend services (like servers or databases) and manages all the requests coming in.
+```
 
 **Key Points to Understand:**
 
