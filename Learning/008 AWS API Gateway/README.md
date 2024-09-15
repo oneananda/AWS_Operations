@@ -78,9 +78,11 @@ This expanded table should give you a clearer picture of how AWS API Gateway fit
 
 **API Lifecycle Management:**
 
-API Gateway includes built-in tools for managing the lifecycle of your APIs, such as versioning, staging environments (like dev, test, prod), and stage-level settings.
+API Gateway includes built-in tools for managing the lifecycle of the APIs, such as versioning, staging environments (like dev, test, prod), and stage-level settings.
 
+**Canary Deployments:**
 
+API Gateway supports canary deployments, allowing to deploy new API versions to a small subset of users for testing purposes before rolling it out fully. 
 
 ---
 
