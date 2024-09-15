@@ -86,7 +86,11 @@ API Gateway supports canary deployments, allowing to deploy new API versions to 
 
 **AWS WAF (Web Application Firewall) Integration:**
 
-API Gateway easily integrates with AWS WAF
+API Gateway easily integrates with AWS WAF.
+
+**Built-In Mock Integration:**
+
+We can use API Gateway’s built-in mock integration to test your APIs without setting up any backend. 
 
 ---
 
