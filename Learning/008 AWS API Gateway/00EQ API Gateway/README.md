@@ -1,7 +1,7 @@
 # AWS API Gateway Exam Questions
 
 ### Question 1
-**Question:** In AWS API Gateway, which method would you use to handle complex request transformations that involve converting XML payloads to JSON before forwarding to an AWS Lambda backend?
+In AWS API Gateway, which method would you use to handle complex request transformations that involve converting XML payloads to JSON before forwarding to an AWS Lambda backend?
 
 **Options:**
 
@@ -18,7 +18,7 @@ D. Use AWS Glue to process and transform data before sending it to Lambda.
 - **D. Use AWS Glue to process and transform data before sending it to Lambda:** AWS Glue is a data processing service intended for ETL (Extract, Transform, Load) tasks, and it is not designed for real-time request transformations in API Gateway.
 
 ### Question 2
-**Question:** Which of the following best describes how to enable detailed logging of incoming requests and backend responses in AWS API Gateway?
+Which of the following best describes how to enable detailed logging of incoming requests and backend responses in AWS API Gateway?
 
 **Options:**
 
@@ -35,7 +35,7 @@ D. Configure VPC Flow Logs to capture API traffic.
 - **D. Configure VPC Flow Logs to capture API traffic:** VPC Flow Logs capture network traffic within a VPC but do not provide detailed logging specific to API Gateway request and response data.
 
 ### Question 3
-**Question:** How can you implement a canary release in AWS API Gateway to safely deploy new versions of your API?
+How can you implement a canary release in AWS API Gateway to safely deploy new versions of your API?
 
 **Options:**
 
@@ -52,7 +52,7 @@ D. Use AWS CloudFront to perform the canary release by splitting traffic.
 - **D. Use AWS CloudFront to perform the canary release by splitting traffic:** CloudFront handles caching and content delivery and does not manage API-specific traffic splitting or canary releases.
 
 ### Question 4
-**Question:** Which AWS API Gateway feature allows you to secure your APIs by restricting access based on client usage, such as limiting the number of requests or controlling the rate of requests?
+Which AWS API Gateway feature allows you to secure your APIs by restricting access based on client usage, such as limiting the number of requests or controlling the rate of requests?
 
 **Options:**
 
@@ -69,7 +69,7 @@ D. Use AWS IAM roles and policies.
 - **D. Use AWS IAM roles and policies:** IAM roles and policies control access permissions but do not handle rate limiting or usage management for APIs.
 
 ### Question 5
-**Question:** In AWS API Gateway, which of the following methods can be used to minimize the cold start latency when using Lambda functions as the backend?
+In AWS API Gateway, which of the following methods can be used to minimize the cold start latency when using Lambda functions as the backend?
 
 **Options:**
 
