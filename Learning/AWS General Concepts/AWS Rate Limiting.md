@@ -1,12 +1,12 @@
 # AWS Rate Limiting
 
-AWS provides several security services and features that support `rate limiting` to help protect the applications from abuse, DDoS attacks, and other excessive usage patterns.
+AWS provides several security services and features that support `rate limiting` to help protect the applications from `abuse`, `DDoS attacks`, and other `excessive usage patterns`.
 
 ### List of AWS services that support rate limiting
 
 | AWS Service                 | Rate Limiting Support | Type of Support      | Additional Details                                                                                             |
 |-----------------------------|-----------------------|----------------------|-----------------------------------------------------------------------------------------------------------------|
-| **AWS WAF**                 | Direct                | Rate-based rules     | Allows you to create rate-based rules to block requests exceeding a set threshold from a single IP over time.   |
+| **AWS WAF**                 | Direct                | Rate-based rules     | Allows us to create rate-based rules to block requests exceeding a set threshold from a single IP over time.   |
 | **Amazon API Gateway**      | Direct                | Usage plans, quotas  | Supports rate limiting and throttling through usage plans, enabling control over request rates and quotas.      |
 | **Amazon CloudFront**       | Indirect              | WAF integration      | Works with AWS WAF to apply rate-based rules at the edge; no direct rate limiting capabilities in CloudFront.   |
 | **AWS App Mesh**            | Indirect              | Service-to-service   | Uses retries, timeouts, and circuit breaker settings to indirectly manage request rates between services.       |
