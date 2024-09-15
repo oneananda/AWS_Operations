@@ -72,4 +72,23 @@
      - Disable all rules and add them back one by one (This disrupts security and is time-consuming).
      - Increase the thresholds for all rules globally to avoid blocking (This could let actual threats through).
 
+### Question 11
+**Question:** Your web application is experiencing frequent SQL injection attacks. Which AWS WAF rule type would be most appropriate to address this issue?
 
+**Options:**
+- A) Rate-based rule
+- B) SQL injection match condition
+- C) Geo-match condition
+- D) String match condition
+
+**Answer:** B) SQL injection match condition
+
+**Explanation on right answer:**  
+SQL injection match conditions are specifically designed to detect and block SQL injection attempts by analyzing request patterns that match SQL syntax.
+
+**Explanation on why the other options are not correct:**  
+- **A) Rate-based rule:** This rule limits the number of requests from a single source but does not specifically target SQL injection patterns.  
+- **C) Geo-match condition:** This rule blocks requests based on geographic location and is unrelated to SQL injection.  
+- **D) String match condition:** While it can identify specific strings, it is not specialized for SQL injection patterns and may miss more sophisticated attacks.
+
+---
