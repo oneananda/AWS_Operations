@@ -74,6 +74,16 @@ This expanded table should give you a clearer picture of how AWS API Gateway fit
 
 ---
 
+## AWS API Gateway Unique features
+
+**API Lifecycle Management:**
+
+API Gateway includes built-in tools for managing the lifecycle of your APIs, such as versioning, staging environments (like dev, test, prod), and stage-level settings.
+
+
+
+---
+
 ## AWS API Gateway Limitations
 
 1. **Payload Size Limits:** You can’t send or receive really large files—API Gateway has a cap of 10 MB for REST APIs. For WebSocket APIs, it's even smaller, just 128 KB.
