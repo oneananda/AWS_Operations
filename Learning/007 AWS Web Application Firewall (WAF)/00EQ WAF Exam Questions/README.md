@@ -134,3 +134,25 @@ Fine-tuning the rate limits based on actual traffic patterns helps to balance se
 - **D) Replace rate-based rules with IP set rules:** IP set rules do not handle request rates; they filter based on IP addresses, which doesn’t address the issue of legitimate traffic rates.
 
 ---
+
+### Question 14
+**Question:** To protect against malicious bot traffic, which AWS WAF feature should you utilize?
+
+**Options:**
+- A) Geo-match conditions
+- B) AWS WAF Bot Control
+- C) Rate-based rules
+- D) String match condition
+
+**Answer:** B) AWS WAF Bot Control
+
+**Explanation on right answer:**  
+AWS WAF Bot Control is specifically designed to identify and manage bot traffic, distinguishing between good bots (like search engines) and bad bots, allowing you to set different handling rules.
+
+**Explanation on why the other options are not correct:**  
+- **A) Geo-match conditions:** This feature is for filtering traffic based on geographic location, not for detecting bots.  
+- **C) Rate-based rules:** These limit request rates but do not specifically identify bot traffic.  
+- **D) String match condition:** This inspects specific strings within requests and is not meant for bot management.
+
+---
+
