@@ -84,6 +84,10 @@ API Gateway includes built-in tools for managing the lifecycle of the APIs, such
 
 API Gateway supports canary deployments, allowing to deploy new API versions to a small subset of users for testing purposes before rolling it out fully. 
 
+**AWS WAF (Web Application Firewall) Integration:**
+
+API Gateway easily integrates with AWS WAF
+
 ---
 
 ## AWS API Gateway Limitations
