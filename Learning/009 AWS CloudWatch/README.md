@@ -21,3 +21,7 @@ Use Case: Monitor the health and performance of AWS infrastructure components su
 **Security Monitoring**
 
 Use Case: Enhance security posture by monitoring access patterns and unauthorized activities.
+
+**Serverless Application Monitoring**
+
+Use Case: Monitor serverless applications built with AWS Lambda and API Gateway.
