@@ -127,9 +127,13 @@ We can use API Gateway’s built-in mock integration to test your APIs without set
 
 ## Advanced Concepts
 
-### Canary Deployments and Traffic Shifting
+### Canary Deployments and Traffic Shifting:
 
 Canary deployments in API Gateway allow you to release new API versions to a small subset of users before a full rollout. You can specify the percentage of traffic that should be routed to the new deployment while the rest continue using the stable version.
+
+### WebSocket APIs for Real-Time Communication:
+
+AWS API Gateway supports WebSocket APIs, enabling real-time, two-way communication between clients and servers. This is especially useful for applications that require live updates, such as chat applications, live sports scores, or financial tickers.
 
 
 ---
