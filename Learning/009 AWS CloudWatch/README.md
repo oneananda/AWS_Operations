@@ -30,3 +30,30 @@ Use Case: Monitor serverless applications built with AWS Lambda and API Gateway.
 
 Use Case: Automate responses to incidents and operational issues.
 
+
+---
+
+Detailed table for AWS CloudWatch covering various parameters such as features, purposes, cost considerations, use cases, and key benefits:
+
+| **Parameter**        | **Description**                                            |
+|----------------------|------------------------------------------------------------|
+| **Purpose**          | Monitoring and observability for AWS resources and applications. |
+| **Features**         | Metrics, Alarms, Logs, Dashboards, Events, Synthetics, Contributor Insights, Service Lens, Anomaly Detection |
+| **Metrics**          | Collects and tracks metrics from AWS services and custom sources. |
+| **Alarms**           | Notifies based on metric thresholds, integrates with SNS, Auto Scaling, etc. |
+| **Logs**             | Collects, monitors, and analyzes log data from applications and AWS services. |
+| **Dashboards**       | Visualizes metrics and logs using customizable dashboards. |
+| **Events**           | Detects and responds to changes in AWS resources and applications. |
+| **Synthetics**       | Monitors application endpoints to check for availability and latency. |
+| **Contributor Insights** | Analyzes log data to identify high-volume contributors to operational issues. |
+| **Service Lens**     | Provides an end-to-end view of application performance, including traces, metrics, and logs. |
+| **Anomaly Detection** | Automatically detects anomalous behavior in metric data. |
+| **Cost Considerations** | Pay per usage (metrics, logs, alarms, dashboards, events, etc.). |
+| **Use Cases**        | Application monitoring, resource utilization tracking, performance optimization, operational health checks, automated responses. |
+| **Scaling Options**  | Automatically scales to handle large volumes of metrics, logs, and events. |
+| **Key Benefits**     | Real-time monitoring, automated responses to changes, enhanced visibility into AWS environments, customizable alerting, integrated with AWS services. |
+| **Integration**      | Integrates with AWS Lambda, EC2, RDS, S3, Elastic Load Balancing, Auto Scaling, and third-party applications. |
+| **Retention**        | Metrics retention for 15 months, logs retention configurable. |
+| **Security**         | Data encryption, access control via IAM policies, and CloudWatch Logs Insights for query-based access. |
+| **Setup Complexity** | Easy to set up with AWS services; can be more complex when integrating with custom applications. |
+
