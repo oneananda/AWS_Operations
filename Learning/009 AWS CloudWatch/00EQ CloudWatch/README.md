@@ -60,3 +60,23 @@ B) Synthetics can incur high costs due to frequent canary runs.
 
 ---
 
+### Question 4:
+**Which of the following is a potential drawback of using AWS CloudWatch for log monitoring and analysis?**
+
+- A) CloudWatch Logs Insights provides an intuitive and powerful query language for log analysis.
+- B) Log data retention in CloudWatch can lead to significant cost increases over time.
+- C) CloudWatch can automatically parse and interpret all log formats without configuration.
+- D) CloudWatch Logs automatically indexes all log fields for efficient searching.
+
+**Right Answer:**
+B) Log data retention in CloudWatch can lead to significant cost increases over time.
+
+**Why Not Other Answers Fit:**
+- **A) Incorrect**: This is true; CloudWatch Logs Insights offers a robust query language for log analysis, making it a powerful tool.
+- **C) Incorrect**: CloudWatch does not automatically parse and interpret all log formats; custom parsing and log format configuration are often necessary.
+- **D) Incorrect**: CloudWatch Logs does not automatically index all fields; specific fields must be extracted and indexed manually using Log Insights queries.
+
+**Explanation for B**: Retaining large volumes of log data in CloudWatch Logs can become costly over time, especially if log retention settings are not optimized for your needs.
+
+---
+
