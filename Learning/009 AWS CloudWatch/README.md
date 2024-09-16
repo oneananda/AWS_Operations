@@ -17,3 +17,7 @@ Use Case: Monitor the performance of web applications running on EC2, Lambda, or
 **Infrastructure Monitoring**
 
 Use Case: Monitor the health and performance of AWS infrastructure components such as EC2 instances, RDS databases, and load balancers.
+
+**Security Monitoring**
+
+Use Case: Enhance security posture by monitoring access patterns and unauthorized activities.
