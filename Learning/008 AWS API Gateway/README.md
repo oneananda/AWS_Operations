@@ -135,5 +135,9 @@ Canary deployments in API Gateway allow you to release new API versions to a sma
 
 AWS API Gateway supports WebSocket APIs, enabling real-time, two-way communication between clients and servers. This is especially useful for applications that require live updates, such as chat applications, live sports scores, or financial tickers.
 
+### Custom Authorizers with OAuth 2.0 and JWT Tokens:
+
+Custom authorizers allow you to implement complex authentication and authorization logic by using AWS Lambda functions to validate incoming tokens, such as OAuth 2.0 tokens or JSON Web Tokens (JWT). This can be used to enforce granular access controls.
+
 
 ---
