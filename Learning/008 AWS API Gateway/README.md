@@ -139,5 +139,9 @@ AWS API Gateway supports WebSocket APIs, enabling real-time, two-way communicati
 
 Custom authorizers allow you to implement complex authentication and authorization logic by using AWS Lambda functions to validate incoming tokens, such as OAuth 2.0 tokens or JSON Web Tokens (JWT). This can be used to enforce granular access controls.
 
+### Cross-Origin Resource Sharing (CORS) Configuration:
+
+CORS in API Gateway controls how resources can be shared across different domains. Proper CORS configuration is crucial for allowing web applications to securely access your APIs from other domains.
+
 
 ---
