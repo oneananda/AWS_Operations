@@ -57,3 +57,5 @@ Detailed table for AWS CloudWatch covering various parameters such as features, 
 | **Security**         | Data encryption, access control via IAM policies, and CloudWatch Logs Insights for query-based access. |
 | **Setup Complexity** | Easy to set up with AWS services; can be more complex when integrating with custom applications. |
 
+---
+
