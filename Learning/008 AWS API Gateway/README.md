@@ -124,3 +124,12 @@ We can use API Gateway’s built-in mock integration to test your APIs without set
 15. **Lack of Built-In Support for SOAP APIs:** If you’re working with older systems that use SOAP, API Gateway doesn’t natively support it, meaning you’ll have to create custom solutions or add a layer to handle it.
 
 ---
+
+## Advanced Concepts
+
+### Canary Deployments and Traffic Shifting
+
+Canary deployments in API Gateway allow you to release new API versions to a small subset of users before a full rollout. You can specify the percentage of traffic that should be routed to the new deployment while the rest continue using the stable version.
+
+
+---
