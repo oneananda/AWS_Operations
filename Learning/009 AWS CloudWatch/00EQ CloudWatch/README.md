@@ -40,4 +40,23 @@ B) 100
 
 ---
 
+### Question 3:
+**Which of the following is a limitation when using CloudWatch Synthetics for monitoring your application?**
+
+- A) Synthetics can only monitor APIs, not full user journeys.
+- B) Synthetics can incur high costs due to frequent canary runs.
+- C) Synthetics does not support custom runtime environments.
+- D) Synthetics can only be used within AWS regions.
+
+**Right Answer:**
+B) Synthetics can incur high costs due to frequent canary runs.
+
+**Why Not Other Answers Fit:**
+- **A) Incorrect**: CloudWatch Synthetics can monitor both APIs and full user journeys by scripting canary tests.
+- **C) Incorrect**: Synthetics supports custom runtime environments for canaries through runtime versions and canary configurations.
+- **D) Incorrect**: Synthetics can run globally and is not restricted to AWS regions alone; it supports monitoring from multiple geographic locations.
+
+**Explanation for B**: CloudWatch Synthetics can incur high costs if canaries are run frequently, especially when simulating user journeys or performing extensive API monitoring, making cost management a key consideration.
+
+---
 
