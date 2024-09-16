@@ -80,3 +80,23 @@ B) Log data retention in CloudWatch can lead to significant cost increases over 
 
 ---
 
+### Question 5:
+**Which statement is true about the integration between AWS CloudWatch and AWS Lambda?**
+
+- A) AWS Lambda can only send logs to CloudWatch Logs, but not custom metrics.
+- B) CloudWatch cannot trigger AWS Lambda functions directly.
+- C) AWS Lambda can be used to automatically scale CloudWatch metrics based on custom thresholds.
+- D) CloudWatch can trigger AWS Lambda functions based on alarms, events, and log patterns.
+
+**Right Answer:**
+D) CloudWatch can trigger AWS Lambda functions based on alarms, events, and log patterns.
+
+**Why Not Other Answers Fit:**
+- **A) Incorrect**: AWS Lambda can send both logs to CloudWatch Logs and custom metrics to CloudWatch, making A incorrect.
+- **B) Incorrect**: CloudWatch can trigger AWS Lambda directly through CloudWatch Events and Alarms.
+- **C) Incorrect**: AWS Lambda is not used to "scale CloudWatch metrics"; rather, it can be triggered to perform actions when certain thresholds are met.
+
+**Explanation for D**: AWS CloudWatch has direct integration to trigger Lambda functions based on various events, alarms, and log patterns, which is a powerful feature for automated responses and workflows.
+
+---
+
