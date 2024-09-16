@@ -7,3 +7,10 @@ AWS CloudWatch is a service which is used to monitor the AWS services,
 - Sets alarms
 - Provide insights on performance
 - Provide insights on health status
+
+### Use cases
+
+**Application Performance Monitoring**
+
+Use Case: Monitor the performance of web applications running on EC2, Lambda, or container services like ECS and EKS.
+
