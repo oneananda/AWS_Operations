@@ -1,0 +1,30 @@
+# AWS EC2 Instance Types and Scenarios
+
+| Instance Type                      | Scenario                         | Characteristics                                                      |
+|------------------------------------|----------------------------------|---------------------------------------------------------------------|
+| On-Demand Instances                | High Availability (HA)           | No long-term commitment, high availability guaranteed               |
+| Spot Instances                     | Cost-Effective                   | Low cost, suitable if workload is interruptible                     |
+| Reserved Instances                 | Predictable Workload             | Cost savings with long-term commitment                              |
+| Dedicated Instances                | Isolation/Compliance             | Dedicated hardware, meets isolation needs, higher cost              |
+| Savings Plans                      | Maximizing Savings               | Flexible savings with commitment                                    |
+| Dedicated Hosts                    | Strict Hardware Isolation        | Full control over hardware, expensive                               |
+| Burstable Instances                | Scalable General Purpose         | Good for spiky workloads, cost-effective                            |
+| Compute Optimized Instances        | High Compute Needs               | Optimized for performance, high compute power                       |
+| On-Demand Capacity Reservations    | Reserved Capacity in AZ          | Ensures capacity availability in specific Availability Zone         |
+| Regional Reserved Instances        | Regional Reserved Capacity       | Cost savings with flexibility to switch between Availability Zones  |
+
+
+## Instance Types and Scenarios
+
+| Instance Type                   | Scenario                      | Exam Scenario Questions Brief Summary                                      | Exam Options Provided Which May Mislead             | Summary                                                                                               |
+|---------------------------------|-------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| On-Demand Instances             | High Availability (HA)        | Which instance type offers high availability without commitment?           | Spot Instances, Reserved Instances                  | On-Demand Instances provide the flexibility and high availability needed without long-term commitments. |
+| Spot Instances                  | Cost-Effective                | What is the most cost-effective option if your workload can handle interruptions? | On-Demand Instances, Reserved Instances           | Spot Instances are the most cost-effective option, ideal for interruptible workloads.                 |
+| Reserved Instances              | Predictable Workload          | Which option is best for predictable, long-term workloads?                 | Spot Instances, Dedicated Hosts                     | Reserved Instances offer the best savings for predictable workloads with a long-term commitment.      |
+| Dedicated Instances             | Isolation/Compliance          | What instance type meets regulatory requirements for isolation?            | On-Demand Instances, Spot Instances                 | Dedicated Instances are suitable for scenarios requiring dedicated hardware and compliance.           |
+| Savings Plans                   | Maximizing Savings            | How can you maximize savings with flexible instance usage?                 | On-Demand Instances, Dedicated Instances            | Savings Plans offer significant cost savings for varied usage patterns with a commitment.             |
+| Dedicated Hosts                 | Strict Hardware Isolation     | Which instance type provides strict hardware isolation and control?        | Spot Instances, Reserved Instances                  | Dedicated Hosts provide full control over hardware, suitable for strict compliance and licensing needs.|
+| Burstable Instances             | Scalable General Purpose      | Which instance type suits workloads with spiky resource needs?             | On-Demand Instances, Compute Optimized              | Burstable Instances are perfect for workloads with irregular spikes, balancing performance and cost.   |
+| Compute Optimized Instances     | High Compute Needs            | What is the best option for high-performance compute workloads?            | Burstable Instances, Savings Plans                  | Compute Optimized Instances are designed for high compute power, optimizing performance for demanding applications. |
+| On-Demand Capacity Reservations | Reserved Capacity in AZ       | How can you ensure EC2 capacity is available exactly when needed in a specific AZ? | On-Demand Instances, Spot Instances               | On-Demand Capacity Reservations ensure required EC2 instances are available exactly when needed, providing capacity assurance and flexibility. |
+| Regional Reserved Instances     | Regional Reserved Capacity    | Which reserved instance type allows flexibility across Availability Zones within a region? | On-Demand Capacity Reservations, Spot Instances | Regional Reserved Instances allow cost savings with flexibility across different AZs within the same region. |
