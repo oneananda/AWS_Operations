@@ -1,19 +1,5 @@
 # AWS EC2 Instance Types and Scenarios
 
-| Instance Type                      | Scenario                         | Characteristics                                                      |
-|------------------------------------|----------------------------------|---------------------------------------------------------------------|
-| On-Demand Instances                | High Availability (HA)           | No long-term commitment, high availability guaranteed               |
-| Spot Instances                     | Cost-Effective                   | Low cost, suitable if workload is interruptible                     |
-| Reserved Instances                 | Predictable Workload             | Cost savings with long-term commitment                              |
-| Dedicated Instances                | Isolation/Compliance             | Dedicated hardware, meets isolation needs, higher cost              |
-| Savings Plans                      | Maximizing Savings               | Flexible savings with commitment                                    |
-| Dedicated Hosts                    | Strict Hardware Isolation        | Full control over hardware, expensive                               |
-| Burstable Instances                | Scalable General Purpose         | Good for spiky workloads, cost-effective                            |
-| Compute Optimized Instances        | High Compute Needs               | Optimized for performance, high compute power                       |
-| On-Demand Capacity Reservations    | Reserved Capacity in AZ          | Ensures capacity availability in specific Availability Zone         |
-| Regional Reserved Instances        | Regional Reserved Capacity       | Cost savings with flexibility to switch between Availability Zones  |
-
-
 ## Instance Types and Scenarios
 
 | Instance Type                   | Scenario                      | Exam Scenario Questions Brief Summary                                      | Exam Options Provided Which May Mislead             | Summary                                                                                               |
