@@ -18,3 +18,11 @@ Amazon RDS (Relational Database Service) provides several features for backing u
 - **User Initiated**: You create snapshots manually via the AWS Management Console, CLI, or API.
 - **Retention**: Snapshots are retained until you explicitly delete them. They are not subject to the automated backup retention policy.
 - **Restoration**: Manual snapshots can be used to create a new RDS instance or restore data to an existing instance.
+
+### 3. **Database Snapshots**
+
+**Snapshots** are similar to manual backups and provide a point-in-time copy of your RDS instance. They offer:
+
+- **Consistency**: Snapshots capture the database state at the time of creation, including data and database schema.
+- **Cross-Region Replication**: Snapshots can be copied to other AWS regions for disaster recovery or geographic redundancy.
+
