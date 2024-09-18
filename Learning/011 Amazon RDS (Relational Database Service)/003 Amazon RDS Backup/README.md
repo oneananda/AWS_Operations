@@ -11,3 +11,10 @@ Amazon RDS (Relational Database Service) provides several features for backing u
 - **Backup Frequency**: Automated backups are taken daily and include the entire database instance, including database snapshots and transaction logs.
 - **Point-in-Time Recovery**: Allows recovery of your database to any point within the backup retention period.
 
+### 2. **Manual Snapshots**
+
+**Manual Snapshots** are user-initiated backups that you can create on-demand. Key features include:
+
+- **User Initiated**: You create snapshots manually via the AWS Management Console, CLI, or API.
+- **Retention**: Snapshots are retained until you explicitly delete them. They are not subject to the automated backup retention policy.
+- **Restoration**: Manual snapshots can be used to create a new RDS instance or restore data to an existing instance.
