@@ -26,3 +26,10 @@ Amazon RDS (Relational Database Service) provides several features for backing u
 - **Consistency**: Snapshots capture the database state at the time of creation, including data and database schema.
 - **Cross-Region Replication**: Snapshots can be copied to other AWS regions for disaster recovery or geographic redundancy.
 
+### 4. **Transaction Logs**
+
+For engines that support it (like MySQL and PostgreSQL), RDS can retain transaction logs as part of automated backups. This feature allows:
+
+- **Continuous Backup**: Captures changes made to the database since the last backup.
+- **Point-in-Time Recovery**: Enables restoring the database to a specific time, down to a second, within the backup retention period.
+
