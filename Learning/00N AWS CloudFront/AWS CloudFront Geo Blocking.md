@@ -41,3 +41,13 @@ In this configuration, users outside the United States will receive a `403 Forbi
 - **Proxy Use**: Users can bypass geo restrictions using VPNs or proxies.
 
 Geo blocking in AWS CloudFront provides a robust way to manage regional access to content, ensuring compliance with legal, licensing, or security needs.
+
+### **Other services offering Geo-Blocking**
+
+Geo-blocking within AWS can be applied using a variety of services, depending on our needs:
+- **CloudFront**: Content delivery and geo-blocking for web content.
+- **AWS WAF**: Fine-grained geo-blocking for web applications and APIs.
+- **API Gateway**: Geo-blocking APIs via WAF integration.
+- **S3**: Indirect geo-blocking via CloudFront.
+- **Route 53**: Geo-location routing.
+- **VPC ACLs**: Network-level geo-blocking based on IP addresses.
