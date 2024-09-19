@@ -50,3 +50,12 @@ For engines that support it (like MySQL and PostgreSQL), RDS can retain transact
    - **Storage Costs**: Backup storage is billed separately. The cost depends on the size of the backups and the retention period.
    - **Snapshot Storage**: Manual snapshots incur storage costs based on their size and duration.
 
+### Best Practices
+
+- **Regular Backups**: Ensure automated backups are enabled and configured with an appropriate retention period for your needs.
+- **Test Restores**: Periodically test restore procedures to ensure backup integrity and readiness for disaster recovery.
+- **Monitor and Alert**: Use CloudWatch to monitor backup processes and set up alerts for backup failures or issues.
+
+By leveraging these backup features and practices, we can ensure data protection, disaster recovery, and operational resilience for our RDS databases.
+
+
