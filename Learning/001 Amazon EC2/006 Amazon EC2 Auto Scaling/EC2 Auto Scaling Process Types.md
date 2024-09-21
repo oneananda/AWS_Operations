@@ -37,3 +37,11 @@ These processes focus on managing the instances that need to be removed:
 ## Managing Scaling Processes
 
 You have the flexibility to suspend or resume any of these processes if needed, especially when you're troubleshooting or when you want to avoid any unexpected changes impacting your system's performance. Just keep in mind that if you suspend a primary process, it might affect the functionality of related scaling features.
+
+
+## Scaling Types
+
+### 1. **Scheduled Scaling**
+   - **Explanation:** Scheduled scaling works like setting an alarm for an event you know is going to happen. You decide beforehand when to add or remove capacity, based on predictable patterns in your application's usage.
+   - **Example:** Think of it as preparing for guests during the festive season. If you know friends and family will visit at a specific time, you cook extra food and prepare the house beforehand. Similarly, for an online store, if you expect more traffic during sales like Black Friday or Diwali, you can schedule extra servers to be ready at a set time to handle the rush.
+
