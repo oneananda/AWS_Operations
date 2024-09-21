@@ -62,6 +62,10 @@ Which of the following is the correct process to achieve this?
 
 ### RDS Proxy related questions
 
+RDS Proxy has a soft limit of 1,000 simultaneous connections from AWS Lambda
+
+
+
 #### Question 1
 
 You have a high-traffic application using an RDS MySQL database that is experiencing connection exhaustion issues. You decide to implement RDS Proxy. Which of the following benefits will help your application avoid these issues?
