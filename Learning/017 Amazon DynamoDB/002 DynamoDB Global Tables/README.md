@@ -17,3 +17,9 @@
 - **Disaster recovery**: To ensure that your application remains available in case of a regional outage.
 - **Globally distributed workloads**: For applications like gaming, social media, or global e-commerce, where users are spread out and data needs to be synchronized globally.
 
+### Example use case:
+In a AR mobile game mobile app, enabling **DynamoDB Global Tables** would allow players from different regions (e.g., North America, Europe, Asia) to access game data with minimal latency, while also ensuring that any updates (like player scores or game state) are replicated across regions.
+
+### Conclusion:
+**DynamoDB Global Replication (Global Tables)** is a powerful feature for replicating DynamoDB data across multiple AWS regions, enabling high availability, low-latency reads, and disaster recovery for globally distributed applications.
+
