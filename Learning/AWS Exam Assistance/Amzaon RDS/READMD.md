@@ -1,4 +1,4 @@
-# Amazon RDS Exam Assistance
+﻿# Amazon RDS Exam Assistance
 
 - It is not possible to enable encryption directly on an existing unencrypted RDS instance. 
 
@@ -30,7 +30,7 @@ What should a solutions architect do to achieve this?
    **Modifying the existing RDS instance** to enable encryption is not possible. RDS instances must be created with encryption at the time of launch.
 
 - **Option 4:**  
-   It�s not possible to **enable encryption on a stopped instance**. You must create a new encrypted instance or snapshot as part of the solution.
+   It’s not possible to **enable encryption on a stopped instance**. You must create a new encrypted instance or snapshot as part of the solution.
 
 ---
 
@@ -62,7 +62,9 @@ Which of the following is the correct process to achieve this?
 
 ### RDS Proxy related questions
 
-1. You have a high-traffic application using an RDS MySQL database that is experiencing connection exhaustion issues. You decide to implement RDS Proxy. Which of the following benefits will help your application avoid these issues?
+#### Question 1
+
+You have a high-traffic application using an RDS MySQL database that is experiencing connection exhaustion issues. You decide to implement RDS Proxy. Which of the following benefits will help your application avoid these issues?
 
 A. RDS Proxy provides connection pooling, which minimizes the number of open database connections by multiplexing multiple application connections onto a smaller number of database connections.
 B. RDS Proxy performs automatic retries on failed queries, reducing the load on the database.
@@ -70,3 +72,21 @@ C. RDS Proxy distributes traffic evenly between multiple RDS instances, allowing
 D. RDS Proxy automatically adds read replicas to handle more read traffic.
 
 `Twist:` You need to select the most relevant and specific feature of RDS Proxy that directly addresses connection exhaustion.
+
+Correct Answer: A.
+RDS Proxy helps avoid connection exhaustion issues by providing connection pooling. It consolidates multiple client connections into fewer database connections, which reduces the chance of exhausting the maximum allowed database connections. This feature is particularly useful for high-traffic applications where many connections are being opened and closed frequently.
+
+#### Question 2
+
+After implementing RDS Proxy, your team noticed an improvement in performance for read-heavy workloads. However, your write-heavy workloads still seem to be struggling. What could be the reason?
+
+A. RDS Proxy is optimized for read-heavy workloads and cannot manage write-heavy workloads efficiently.
+B. The proxy is not configured with enough targets to handle the write load. ✔
+C. Your RDS instance is under-provisioned for the current write operations.
+D. Write queries are being incorrectly routed to read replicas by RDS Proxy.
+
+
+Correct Answer: B.
+
+RDS Proxy can manage both read and write workloads, but if it is not configured with enough targets, it could struggle with the write-heavy load. Adding more targets (such as RDS instances with sufficient write capacity) and ensuring your write operations are correctly routed will improve performance for write-heavy workloads.
+
