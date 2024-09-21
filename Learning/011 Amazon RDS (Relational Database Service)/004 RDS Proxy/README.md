@@ -4,3 +4,7 @@ RDS Proxy is designed to handle connection pooling and manage database connectio
 
 Enabling RDS Proxy is the most cost-effective and minimal-impact solution, as it allows the application to handle more concurrent connections without modifying the database or application significantly.
 
+###  Supported Database Engines
+
+Currently, RDS Proxy supports MySQL, MariaDB, PostgreSQL, and Amazon Aurora (MySQL and PostgreSQL compatible).
+
