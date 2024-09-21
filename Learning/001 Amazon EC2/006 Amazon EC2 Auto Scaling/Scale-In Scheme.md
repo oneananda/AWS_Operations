@@ -30,3 +30,22 @@ Here’s a visual breakdown in simple steps:
 | **5**    | Terminate the instance                  | 5            |
 
 
+## Question 1
+
+When the follwing will happen ?
+
+"The instance will be randomly selected by the Auto Scaling group"
+
+In the default termination policy of an Auto Scaling group, **random selection of an instance** does not typically occur. However, random selection could happen in the following situations:
+
+1. **Custom Termination Policy**: If you configure a custom termination policy that explicitly defines random selection, Auto Scaling can terminate instances randomly. This is **not part of the default behavior**.
+
+2. **Tie-Breaking**: Although rare, random selection may occur as a tie-breaker if:
+   - Instances across Availability Zones are perfectly balanced.
+   - All instances have the same launch template/configuration.
+   - All instances have been running for exactly the same amount of time.
+
+   In such cases, since no clear instance can be prioritized for termination, Auto Scaling might randomly select one instance for termination.
+
+3. **No Specific Termination Policy Defined**: If you manually modify or simplify the termination policy (e.g., turning off the default behavior), the system might fall back to a simple selection method, including random selection, though this would require custom configurations.
+
