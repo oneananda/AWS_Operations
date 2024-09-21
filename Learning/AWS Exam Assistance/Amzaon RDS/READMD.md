@@ -62,9 +62,8 @@ Which of the following is the correct process to achieve this?
 
 ### RDS Proxy related questions
 
-RDS Proxy has a soft limit of 1,000 simultaneous connections from AWS Lambda
-
-
+- RDS Proxy has a soft limit of 1,000 simultaneous connections from AWS Lambda.
+- During scaling operations, RDS Proxy routes traffic to a standby instance to ensure continuous availability and minimize latency during the transition. This helps avoid downtime or high latency during the scaling of the primary database instance.
 
 #### Question 1
 
