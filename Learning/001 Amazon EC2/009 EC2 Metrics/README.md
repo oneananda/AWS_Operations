@@ -1,6 +1,6 @@
 # EC2 Metrics
 
-## EC2 Metrics: Available vs. Not Available in CloudWatch
+### EC2 Metrics: Available vs. Not Available in CloudWatch
 
 This table lists the EC2 instance metrics that are available by default in CloudWatch and the metrics that are **not available by default** (require custom setup with the CloudWatch agent).
 
@@ -27,3 +27,14 @@ This table lists the EC2 instance metrics that are available by default in Cloud
 | **Memory Cache**                  | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
 | **Page File Usage**               | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
 | **Application-Specific Metrics**  | **Not Available**              | Requires custom metric setup based on application needs.    |
+
+### Key Points:
+
+CPU and Network metrics are available by default.
+
+__CPU utilization, network traffic, and packets are collected automatically.__
+
+Memory and Disk-related metrics need a custom setup.
+
+__Memory utilization, available memory, and disk space metrics need to be manually configured using the CloudWatch agent.__
+
