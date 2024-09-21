@@ -60,3 +60,13 @@ You have the flexibility to suspend or resume any of these processes if needed, 
 ### 5. **Predictive Scaling**
    - **Explanation:** Predictive scaling uses machine learning to anticipate the future needs of your application and automatically provisions resources ahead of time, based on historical data.
    - **Example:** Think of it as preparing for a big event where you don't know the exact time people will arrive, but you've looked at past trends and can predict roughly when it will happen. For instance, if your traffic usually spikes at 8 PM every day, predictive scaling will automatically add more servers just before that time, ensuring your app is ready before the rush even begins.
+
+### 6 **Dynamic Scaling**
+   - **Explanation:** Dynamic scaling is a general term that refers to **auto-scaling based on real-time demand**, adjusting your application resources based on the current load. It can be combined with other policies like step scaling or target tracking scaling.
+   - **Example:** Imagine you're managing a fleet of taxis in a city. As demand for rides increases, you send out more taxis, and as demand drops, you bring some back. In dynamic scaling, the system continuously monitors the current state and adjusts resources based on real-time needs.
+
+### 7. **Manual Scaling**
+   - **Explanation:** As the name suggests, manual scaling is when you manually adjust the number of instances or resources to meet current demand. This approach is often used when you want total control or have very specific needs that are hard to automate.
+   - **Example:** It’s like managing a pop-up shop during a weekend fair. You decide to bring in extra staff only after seeing how busy it is, instead of relying on pre-set schedules or predictions. Similarly, you might manually increase the number of EC2 instances when you see a spike in traffic or reduce them during off-hours.
+
+
