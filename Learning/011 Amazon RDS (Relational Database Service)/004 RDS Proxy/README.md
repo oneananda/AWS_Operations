@@ -8,3 +8,4 @@ Enabling RDS Proxy is the most cost-effective and minimal-impact solution, as it
 
 Currently, RDS Proxy supports MySQL, MariaDB, PostgreSQL, and Amazon Aurora (MySQL and PostgreSQL compatible).
 
+

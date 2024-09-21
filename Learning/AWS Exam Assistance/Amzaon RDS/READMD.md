@@ -60,3 +60,13 @@ Which of the following is the correct process to achieve this?
 - **Option 4:**  
    **AWS Lambda** cannot be used to directly enable encryption on an existing unencrypted instance. It still requires the snapshot copy and restore process.
 
+### RDS Proxy related questions
+
+1. You have a high-traffic application using an RDS MySQL database that is experiencing connection exhaustion issues. You decide to implement RDS Proxy. Which of the following benefits will help your application avoid these issues?
+
+A. RDS Proxy provides connection pooling, which minimizes the number of open database connections by multiplexing multiple application connections onto a smaller number of database connections.
+B. RDS Proxy performs automatic retries on failed queries, reducing the load on the database.
+C. RDS Proxy distributes traffic evenly between multiple RDS instances, allowing for better performance in a high-traffic environment.
+D. RDS Proxy automatically adds read replicas to handle more read traffic.
+
+`Twist:` You need to select the most relevant and specific feature of RDS Proxy that directly addresses connection exhaustion.
