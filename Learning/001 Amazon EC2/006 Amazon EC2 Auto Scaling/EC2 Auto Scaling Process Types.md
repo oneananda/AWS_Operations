@@ -56,3 +56,7 @@ You have the flexibility to suspend or resume any of these processes if needed, 
 ### 4. **Target Tracking Scaling**
    - **Explanation:** Target tracking scaling is like setting a thermostat in your home—it works automatically to maintain the temperature you set, adjusting the heating or cooling as needed to keep the room comfortable.
    - **Example:** Imagine you want your office to stay at a constant temperature of 24°C. If it gets too warm, the AC kicks in, and if it gets too cold, the heater turns on, constantly adjusting to maintain that target. Similarly, in cloud computing, you might set your system to always keep CPU usage at 50%. The system will automatically add or remove servers to maintain that balance, scaling as needed without any manual intervention.
+
+### 5. **Predictive Scaling**
+   - **Explanation:** Predictive scaling uses machine learning to anticipate the future needs of your application and automatically provisions resources ahead of time, based on historical data.
+   - **Example:** Think of it as preparing for a big event where you don't know the exact time people will arrive, but you've looked at past trends and can predict roughly when it will happen. For instance, if your traffic usually spikes at 8 PM every day, predictive scaling will automatically add more servers just before that time, ensuring your app is ready before the rush even begins.
