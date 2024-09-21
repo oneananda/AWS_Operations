@@ -52,3 +52,7 @@ You have the flexibility to suspend or resume any of these processes if needed, 
 ### 3. **Step Scaling**
    - **Explanation:** Step scaling is more dynamic and responsive, like adjusting your actions depending on the size of the problem. It allows for scaling in gradual steps, adding or removing resources based on how severe the situation is.
    - **Example:** Let’s say you're running a catering business. If a small group arrives, you send one extra person to help. But if a huge group shows up, you send four people. Similarly, if your application is only slightly overloaded (say, 60% CPU usage), step scaling might add just one server. But if it’s severely overloaded (90% CPU usage), it adds five servers. The scaling happens in steps, depending on how much extra capacity is needed.
+
+### 4. **Target Tracking Scaling**
+   - **Explanation:** Target tracking scaling is like setting a thermostat in your home—it works automatically to maintain the temperature you set, adjusting the heating or cooling as needed to keep the room comfortable.
+   - **Example:** Imagine you want your office to stay at a constant temperature of 24°C. If it gets too warm, the AC kicks in, and if it gets too cold, the heater turns on, constantly adjusting to maintain that target. Similarly, in cloud computing, you might set your system to always keep CPU usage at 50%. The system will automatically add or remove servers to maintain that balance, scaling as needed without any manual intervention.
