@@ -18,13 +18,12 @@ This table lists the EC2 instance metrics that are available by default in Cloud
 | **Status Check Failed (Instance)**| Available                  | Monitors instance-level status failures.                   |
 | **Status Check Failed (System)**  | Available                  | Monitors system-level status failures.                     |
 | **Instance Launch Time**          | Available                  | Collected by CloudWatch as part of instance metadata.       |
-
-| **Memory Utilization**            | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Memory Available**              | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Memory Used**                   | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Disk Space Utilization**        | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Disk Space Available**          | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Swap Usage**                    | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Memory Cache**                  | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Page File Usage**               | Not Available              | Requires custom metric setup via CloudWatch agent.          |
-| **Application-Specific Metrics**  | Not Available              | Requires custom metric setup based on application needs.    |
+| **Memory Utilization**            | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Memory Available**              | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Memory Used**                   | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Disk Space Utilization**        | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Disk Space Available**          | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Swap Usage**                    | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Memory Cache**                  | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Page File Usage**               | **Not Available**              | Requires custom metric setup via CloudWatch agent.          |
+| **Application-Specific Metrics**  | **Not Available**              | Requires custom metric setup based on application needs.    |
