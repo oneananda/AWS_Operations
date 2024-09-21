@@ -49,3 +49,12 @@ In the default termination policy of an Auto Scaling group, **random selection o
 
 3. **No Specific Termination Policy Defined**: If you manually modify or simplify the termination policy (e.g., turning off the default behavior), the system might fall back to a simple selection method, including random selection, though this would require custom configurations.
 
+
+
+### Question 2
+
+When the follwing will happen ?
+
+"The EC2 instance which has the least number of user sessions"
+
+The default Auto Scaling termination policy does not factor in the number of user sessions, so this will not happen by default. However, it is possible to configure a custom policy that terminates instances with fewer sessions if desired.
