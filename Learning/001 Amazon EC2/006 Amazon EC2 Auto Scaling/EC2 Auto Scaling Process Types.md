@@ -45,3 +45,6 @@ You have the flexibility to suspend or resume any of these processes if needed, 
    - **Explanation:** Scheduled scaling works like setting an alarm for an event you know is going to happen. You decide beforehand when to add or remove capacity, based on predictable patterns in your application's usage.
    - **Example:** Think of it as preparing for guests during the festive season. If you know friends and family will visit at a specific time, you cook extra food and prepare the house beforehand. Similarly, for an online store, if you expect more traffic during sales like Black Friday or Diwali, you can schedule extra servers to be ready at a set time to handle the rush.
 
+### 2. **Simple Scaling**
+   - **Explanation:** Simple scaling is like reacting to a situation as soon as you notice something is wrong. It’s based on one condition that, when met, causes your application to scale up or down by a fixed amount.
+   - **Example:** Imagine you're in a busy restaurant and you see a crowd forming. You immediately call in two more staff to help. Similarly, if your application’s CPU usage goes above 70%, you might scale up by adding two more servers to handle the load. But it’s a one-time reaction—once the scaling happens, there’s no further action until the next alarm is triggered.
