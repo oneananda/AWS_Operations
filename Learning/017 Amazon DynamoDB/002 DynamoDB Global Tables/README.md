@@ -5,3 +5,9 @@
 ### What it does:
 - **Global replication** allows DynamoDB to replicate data across multiple regions automatically, ensuring that updates made in one region are propagated to other regions. This feature helps maintain a **globally distributed database** with consistent, low-latency access to data.
 - DynamoDB **Global Tables** use **multi-active replication**, meaning you can read and write to the table in any region, and the changes will be automatically synchronized across all regions.
+
+### Benefits of DynamoDB Global Tables:
+1. **Low-latency access**: Users from different parts of the world can access data from the region closest to them, reducing read/write latency.
+2. **High availability**: In case of a regional failure or disaster, data remains accessible from other regions, providing **disaster recovery** benefits.
+3. **Scalability**: Global Tables automatically scale based on the traffic in each region.
+4. **Consistency**: DynamoDB provides options for strong consistency within a single region, but across regions, it follows an eventually consistent model to balance performance and consistency.
