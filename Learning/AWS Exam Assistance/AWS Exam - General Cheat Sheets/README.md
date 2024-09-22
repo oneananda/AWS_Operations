@@ -294,3 +294,102 @@ This table summarizes **what each service is not capable of** and its best use c
 
 ---
 
+#### **Question 51: Database services**
+1. **RedShift for both use cases**:
+   - **Reason**: RedShift is optimized for long-running, complex analytics queries, not for handling frequent, fast transactional queries like those required by a customer support dashboard.
+
+2. **RDS for both use cases**:
+   - **Reason**: RDS is designed for transactional workloads, but it is not optimized for handling complex analytics queries over large datasets, as RedShift is.
+
+#### **Question 52: High-performance storage for HPC**
+1. **Amazon FSx for Windows for high-performance parallel storage**:
+   - **Reason**: FSx for Windows is optimized for Windows workloads and file systems, not for Linux-based high-performance computing (HPC) workloads that require parallel processing, like FSx for Lustre.
+
+2. **Amazon S3 for high-performance parallel storage**:
+   - **Reason**: S3 is object storage and not designed for high-performance parallel file systems. It is better suited for scalable storage rather than parallel workloads.
+
+3. **Amazon EFS for cold data storage**:
+   - **Reason**: EFS is more suitable for shared access file storage and is not optimized for cost-effective cold data storage compared to Amazon S3, which is more suited for infrequent access.
+
+#### **Question 53: Serverless application on AWS (RDS timeouts)**
+1. **Change the database to an Amazon DynamoDB database**:
+   - **Reason**: DynamoDB is a NoSQL database, and moving from RDS (a relational database) would involve significant application changes, which doesn't align with the goal of minimizing code changes.
+
+2. **Change the class of the instance of your database**:
+   - **Reason**: Simply changing the instance class would increase the number of connections, but would not address connection pooling and efficient connection management, which is better handled by RDS Proxy.
+
+3. **Reduce the concurrency rate for your Lambda Function**:
+   - **Reason**: Lowering the concurrency rate would reduce the load on the database, but it would also reduce the application's performance and wouldn't solve the underlying database connection management issue.
+
+#### **Question 54: NAS file share replacement**
+1. **Amazon Elastic File System (Amazon EFS)**:
+   - **Reason**: EFS is optimized for Linux-based workloads. Since the web server is Windows-based, FSx for Windows File Server is a better option.
+
+2. **AWS Storage Gateway**:
+   - **Reason**: Storage Gateway is more suited for hybrid environments and would not provide the full durability and resilience needed for a fully cloud-native solution in this case.
+
+3. **Amazon EBS**:
+   - **Reason**: EBS is block storage attached to individual EC2 instances and cannot be used as a shared network file system for multiple instances, unlike FSx for Windows.
+
+#### **Question 55: Resiliency of web application**
+1. **Attach EBS volumes to each EC2 instance**:
+   - **Reason**: EBS volumes are tied to specific Availability Zones and cannot be shared across multiple instances in different zones. This setup would not be resilient across zones.
+
+2. **Use S3 One Zone-Infrequent Access**:
+   - **Reason**: One Zone-IA stores data in only one Availability Zone, so it does not provide the resilience required for this web application.
+
+3. **Mount instance store on each EC2 instance**:
+   - **Reason**: Instance store is ephemeral, meaning that data is lost when the instance is stopped or terminated. It is not suitable for storing persistent data that needs resilience.
+
+#### **Question 56: CloudTrail log analysis**
+1. **Write custom scripts to query CloudTrail logs using AWS Glue**:
+   - **Reason**: Writing and maintaining custom scripts requires more effort and complexity compared to using native solutions like QuickSight for querying and dashboard creation.
+
+2. **Search CloudTrail logs with Amazon RedShift**:
+   - **Reason**: RedShift is overkill for searching and analyzing logs from CloudTrail. It requires setting up and managing the data warehouse, which is more effort than necessary.
+
+3. **Create custom script using AWS Batch**:
+   - **Reason**: Writing custom scripts to process logs using AWS Batch involves extra management effort and does not provide the simplicity that Amazon QuickSight offers for visualization and analysis.
+
+#### **Question 57: Badge reader system architecture**
+1. **Direct messages to AWS Lambda using Amazon Route 53**:
+   - **Reason**: Route 53 is a DNS service and is not meant for routing HTTPS traffic or connecting directly to Lambda. API Gateway should be used instead.
+
+2. **Use EC2 instance to process messages**:
+   - **Reason**: Using an EC2 instance introduces additional complexity for managing servers. Serverless solutions with API Gateway and Lambda are better suited for this kind of task.
+
+3. **S3 gateway endpoint and Site-to-Site VPN**:
+   - **Reason**: This setup is too complex for the use case of processing badge reader messages and does not provide real-time processing as API Gateway and Lambda do.
+
+#### **Question 58: Improving database performance**
+1. **Increase the storage capacity to 24 TiB with magnetic storage**:
+   - **Reason**: Magnetic storage is slower and would reduce performance further. It is not appropriate for high-performance databases.
+
+2. **Use DynamoDB and AWS DMS**:
+   - **Reason**: DynamoDB is a NoSQL database and would require significant changes to the application, which is not suitable for a relational database workload like this.
+
+3. **Increase the RDS instance size and use Provisioned IOPS**:
+   - **Reason**: This solution would increase costs without addressing the inefficiency of storing large BLOBs directly in the database.
+
+#### **Question 60: Job processing with EC2 Auto Scaling**
+1. **Use SNS to send jobs to EC2 Auto Scaling group**:
+   - **Reason**: SNS is a pub/sub service and does not provide durable message queueing like SQS. It is not designed for holding jobs that need to be processed asynchronously.
+
+2. **Scale based on network usage**:
+   - **Reason**: Network usage may not correlate well with the number of jobs to be processed, which can lead to inefficient scaling.
+
+3. **Scale based on CPU usage**:
+   - **Reason**: CPU usage scaling does not account for the number of jobs in the queue, leading to inefficient resource management.
+
+#### **Question 63: Large data migration**
+1. **Provision AWS Direct Connect and migrate over the link**:
+   - **Reason**: Direct Connect is a long-term solution but may take weeks to provision, which is not feasible for a 1-month migration window.
+
+2. **Use AWS VPN CloudHub**:
+   - **Reason**: VPN connections generally have lower bandwidth and are not suitable for migrating large datasets like 50TB within a short timeframe.
+
+3. **Use AWS VPN with a Virtual Private Gateway**:
+   - **Reason**: AWS VPN has bandwidth limitations, and transferring 50TB would take too long compared to using AWS Snowball.
+
+---
+
