@@ -102,3 +102,93 @@
 - **Correction:** For frequently accessed data, using **Amazon S3 (Standard or Intelligent-Tiering)** with **FSx for Lustre** is more appropriate.
 
 ---
+
+### 1. **Amazon S3 Transfer Acceleration**
+   - **Not capable of:**
+     - **Real-time streaming or content delivery optimization** for global users. S3 Transfer Acceleration is designed to **speed up uploads** to S3 by routing data through edge locations, but it does not handle caching or streaming content.
+   - **Best suited for:**
+     - Faster uploads of large files to S3 over long distances, but **not for streaming or content delivery.**
+
+### 2. **Amazon Route 53**
+   - **Not capable of:**
+     - **Content delivery or caching** for streaming applications. Route 53 is a DNS service and cannot cache or optimize video delivery.
+     - **Real-time streaming optimization**; it only helps direct traffic to low-latency servers but does not cache content.
+   - **Best suited for:**
+     - Domain name resolution and **routing traffic based on latency** or geolocation, but it’s not involved in content delivery like a CDN.
+
+### 3. **AWS Global Accelerator**
+   - **Not capable of:**
+     - **Content delivery or caching** for real-time or on-demand streaming. AWS Global Accelerator speeds up traffic routing over AWS’s global network but does not cache content at edge locations like a CDN.
+   - **Best suited for:**
+     - **Global traffic acceleration** by improving the performance of applications hosted in AWS regions, particularly when quick failover and global routing are needed. However, it is not meant for caching or streaming optimization.
+
+### 4. **Amazon SQS (Simple Queue Service)**
+   - **Not capable of:**
+     - **Real-time data streaming**. SQS is designed for **message queuing**, which introduces inherent delays and is not suitable for millisecond-level responsiveness.
+     - Handling **high-throughput streaming** data, which requires real-time or near-real-time performance.
+   - **Best suited for:**
+     - Asynchronous processing and decoupling services, where real-time performance is not required.
+
+### 5. **Amazon RedShift**
+   - **Not capable of:**
+     - **Real-time data ingestion and analytics**. RedShift is a **data warehouse** designed for large-scale batch processing and complex queries, but it is not suited for real-time data or streaming workloads.
+   - **Best suited for:**
+     - **OLAP (Online Analytical Processing)**, handling complex queries on large datasets for data warehousing and analytics, but **not for low-latency real-time data analysis.**
+
+### 6. **Amazon EFS (Elastic File System)**
+   - **Not capable of:**
+     - **Windows file sharing** or **integration with Active Directory**. EFS is designed for Linux-based workloads using POSIX permissions and does not support Windows-specific protocols like SMB.
+   - **Best suited for:**
+     - **Linux workloads** requiring shared storage, but not for Windows-based file systems or Active Directory integration.
+
+### 7. **Amazon S3 Bucket with ACLs**
+   - **Not capable of:**
+     - **Serving as a direct replacement for a Windows file share**. S3 is an **object storage service**, and ACLs do not provide the fine-grained file system-like permissions required for Windows shares.
+   - **Best suited for:**
+     - **Object storage** for static files, backups, and media, but not for replacing Windows file shares or handling Windows-specific access controls.
+
+### 8. **Amazon FSx for Lustre**
+   - **Not capable of:**
+     - **Serving Windows clients or supporting Active Directory**. FSx for Lustre is optimized for **high-performance computing (HPC)** workloads and cannot be used for Windows-based file sharing.
+   - **Best suited for:**
+     - **HPC workloads**, such as machine learning, media rendering, and simulations, but not for general-purpose file sharing or Windows workloads.
+
+### 9. **AWS ClassicLink**
+   - **Not capable of:**
+     - Connecting modern VPCs or **exposing services between different VPCs across accounts**. ClassicLink is an outdated service designed to link EC2 Classic instances to VPCs, but it is no longer the best practice.
+   - **Best suited for:**
+     - **Legacy EC2 Classic environments**, but not for modern VPC use cases or service sharing across multiple accounts.
+
+### 10. **Amazon FSx for Lustre (again)**
+   - **Not capable of:**
+     - Supporting **SMB protocol** for Windows file shares or integration with Active Directory, making it unsuitable for Windows-based workloads.
+   - **Best suited for:**
+     - **Linux HPC workloads**, where fast, parallel file processing is needed.
+
+### 11. **VPC Peering**
+   - **Not capable of:**
+     - **Efficient service sharing across multiple AWS accounts or VPCs**. VPC peering allows VPC-to-VPC connectivity, but it requires individual peering connections between every VPC, leading to **high administrative overhead**.
+   - **Best suited for:**
+     - **Direct VPC-to-VPC network connectivity** in simple scenarios, but it does not scale well for sharing services across many accounts or regions.
+
+---
+
+### Summary:
+This table summarizes **what each service is not capable of** and its best use cases:
+
+| AWS Service               | Not Capable Of | Best Suited For |
+|---------------------------|----------------|-----------------|
+| **S3 Transfer Acceleration** | Streaming or content delivery | Accelerating S3 uploads globally |
+| **Route 53**               | Content delivery, caching | DNS resolution, latency-based routing |
+| **Global Accelerator**     | Content caching for streaming | Routing traffic globally for faster access to AWS |
+| **SQS**                    | Real-time streaming | Message queuing, asynchronous communication |
+| **RedShift**               | Real-time data ingestion | Data warehousing, large-scale analytics |
+| **EFS**                    | Windows file sharing | Linux shared file systems with POSIX permissions |
+| **S3 + ACLs**              | Windows file sharing | Object storage with static file permissions |
+| **FSx for Lustre**         | Windows workloads, SMB/AD integration | HPC workloads, parallel processing |
+| **ClassicLink**            | Modern VPC connectivity | Legacy EC2 Classic to VPC communication |
+| **VPC Peering**            | Service sharing across multiple accounts | VPC-to-VPC connectivity |
+
+
+
+
