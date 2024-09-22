@@ -75,11 +75,11 @@ Some of the services in `Amazon Kinesis` are specialized for certain types of da
      - KDS is designed for general-purpose stream processing of various types of data (logs, events, JSON, etc.), making it highly flexible and applicable to a wide range of third-party systems.
      - You can integrate with analytics and monitoring platforms (like Apache Flink, Apache Spark, Datadog) by building custom consumers that read from the stream.
    - **Why Some Services Are Not Applicable**:
-     - Since KDS is a general-purpose stream, most third-party services can be integrated, but in cases where a service is video-specific (e.g., Kinesis Video Streams), direct integration is not possible because KDS doesn’t handle video data.
+     - Since KDS is a general-purpose stream, most third-party services can be integrated, but in cases where a service is video-specific (e.g., Kinesis Video Streams), direct integration is not possible because KDS doesn't handle video data.
 
 ### 2. **Kinesis Data Firehose**
    - **Data Delivery and Transformation:**
-     - Kinesis Data Firehose is focused on delivering streaming data to specific destinations (e.g., S3, Redshift, Elasticsearch, Splunk) and performs data transformation in transit using AWS Lambda. It doesn’t support custom real-time processing logic like KDS or advanced event processing frameworks (e.g., Apache Flink).
+     - Kinesis Data Firehose is focused on delivering streaming data to specific destinations (e.g., S3, Redshift, Elasticsearch, Splunk) and performs data transformation in transit using AWS Lambda. It doesn't support custom real-time processing logic like KDS or advanced event processing frameworks (e.g., Apache Flink).
    - **Why Some Services Are Not Applicable**:
      - Firehose handles automatic delivery to a few select destinations (e.g., S3, Redshift, Elasticsearch, Splunk). It does not offer as much flexibility for real-time processing frameworks (e.g., Apache Flink, Apache Spark), nor does it support complex event processing.
      - Firehose is designed to be simple and fully managed, which limits the ability to run custom logic or interface directly with non-supported third-party tools.
@@ -88,7 +88,7 @@ Some of the services in `Amazon Kinesis` are specialized for certain types of da
    - **Real-Time Data Analytics with SQL and Flink:**
      - Kinesis Data Analytics is built for real-time processing and analytics using **SQL** and **Apache Flink**. It supports complex stream processing using windowing, joins, aggregations, and more.
    - **Why Some Services Are Not Applicable**:
-     - Kinesis Data Analytics is focused on processing real-time data streams and doesn’t deal with video streams (as video requires special handling, codecs, and formats, which are better suited to Kinesis Video Streams).
+     - Kinesis Data Analytics is focused on processing real-time data streams and doesn't deal with video streams (as video requires special handling, codecs, and formats, which are better suited to Kinesis Video Streams).
      - It’s meant for text, logs, and event-driven data analytics, so services or platforms built around video (like media processing tools) are not relevant for this service.
 
 ### 4. **Kinesis Video Streams**
