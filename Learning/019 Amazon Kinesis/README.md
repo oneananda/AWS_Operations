@@ -35,3 +35,35 @@
 - **Video streaming**: Analyzing live video data for media applications or security systems.
 
 Kinesis is widely used in scenarios where real-time data flow and decision-making are essential.
+
+# Amazon Kinesis 3rd Party Support Comparison
+
+This table compares the 3rd party tools, frameworks, and support provided by each of the key Kinesis services:
+
+| Feature/Service                    | **Kinesis Data Streams (KDS)**                           | **Kinesis Data Firehose**                               | **Kinesis Data Analytics**                              | **Kinesis Video Streams**                               |
+|-------------------------------------|----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------|
+| **Apache Flink**                    | Supported through custom applications as consumers.      | Not directly supported.                                 | Fully supported for real-time stream processing.        | Not applicable.                                         |
+| **Apache Spark**                    | Supported through custom Spark Streaming applications.   | Not directly supported.                                 | Can be integrated indirectly by reading from KDS.       | Not applicable.                                         |
+| **AWS Lambda**                      | Supported as a consumer for real-time event processing.  | Supported for transforming data before delivery.        | Can be triggered based on the output of SQL queries or Flink jobs. | Not applicable.                                         |
+| **Elasticsearch (Amazon ES)**       | Not natively supported but can be integrated via consumers.| Supported as a direct delivery destination.             | Can output processed data to Amazon ES via Firehose or Streams. | Not applicable.                                         |
+| **Splunk**                          | Not natively supported but can be integrated via consumers.| Supported as a direct delivery destination.             | Can integrate by delivering processed data through Firehose. | Not applicable.                                         |
+| **Apache Kafka**                    | Supported via Kafka-Kinesis connector (community project).| Not directly supported.                                 | Can integrate with KDS via Flink Kafka Connector.       | Not applicable.                                         |
+| **Datadog**                         | Supported through custom consumers using the Datadog API.| Not directly supported.                                 | Can be integrated via custom metrics from processed streams. | Not applicable.                                         |
+| **New Relic**                       | Supported via custom consumers for metric monitoring.    | Not directly supported.                                 | Can send analytics output to New Relic via integration tools. | Not applicable.                                         |
+| **S3**                              | Supported by custom consumer applications or AWS SDK.    | Supported as a direct delivery destination.             | Can output to S3 after real-time processing.            | Supported as a storage destination for video data.      |
+| **Amazon Redshift**                 | Supported by custom consumer applications or AWS SDK.    | Supported as a direct delivery destination.             | Can output to Redshift after processing.                | Not applicable.                                         |
+| **Tableau**                         | Can integrate with processed data stored in S3 or Redshift. | Can integrate with Firehose delivering data to Redshift.| Can output results to Redshift for Tableau integration. | Not applicable.                                         |
+| **Snowflake**                       | Supported via custom consumers sending data to Snowflake.| Can integrate by delivering data to S3 or via connectors.| Can integrate indirectly by storing processed data in S3 or Redshift. | Not applicable.                                         |
+| **Grafana**                         | Can integrate by sending data to Prometheus or using a custom consumer. | Not directly supported.                                 | Can integrate via real-time metrics output to supported services. | Not applicable.                                         |
+| **Custom HTTP Endpoints**           | Supported through custom consumer applications.          | Supported as a direct delivery destination.             | Can output data to custom HTTP endpoints using Firehose. | Not applicable.                                         |
+
+### Summary of 3rd Party Support:
+
+- **Kinesis Data Streams (KDS)**: Provides flexibility with custom consumers, allowing integration with 3rd party systems like Apache Flink, Apache Spark, Datadog, and Elasticsearch. You can also use connectors for Apache Kafka.
+  
+- **Kinesis Data Firehose**: Simplifies integration by supporting direct delivery to popular 3rd party services such as Elasticsearch, Splunk, and custom HTTP endpoints. AWS Lambda can be used for data transformation.
+
+- **Kinesis Data Analytics**: Full support for **Apache Flink** and integration with external services like Elasticsearch and Splunk. You can process and output data to several destinations including S3, Redshift, and more.
+
+- **Kinesis Video Streams**: Primarily focuses on video processing and supports storing video data in Amazon S3. There is no direct support for many traditional data analytics tools, but video can be processed and analyzed using custom applications.
+
