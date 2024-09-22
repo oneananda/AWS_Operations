@@ -36,7 +36,7 @@
 
 Kinesis is widely used in scenarios where real-time data flow and decision-making are essential.
 
-# Amazon Kinesis 3rd Party Support Comparison
+## Amazon Kinesis 3rd Party Support Comparison
 
 This table compares the 3rd party tools, frameworks, and support provided by each of the key Kinesis services:
 
@@ -66,4 +66,48 @@ This table compares the 3rd party tools, frameworks, and support provided by eac
 - **Kinesis Data Analytics**: Full support for **Apache Flink** and integration with external services like Elasticsearch and Splunk. You can process and output data to several destinations including S3, Redshift, and more.
 
 - **Kinesis Video Streams**: Primarily focuses on video processing and supports storing video data in Amazon S3. There is no direct support for many traditional data analytics tools, but video can be processed and analyzed using custom applications.
+
+
+Some of the services in `Amazon Kinesis` are specialized for certain types of data and use cases, which is why certain third-party integrations are "not applicable" for those services. Let's break this down for the different Kinesis services:
+
+### 1. **Kinesis Data Streams (KDS)**
+   - **General Purpose Stream Processing:**
+     - KDS is designed for general-purpose stream processing of various types of data (logs, events, JSON, etc.), making it highly flexible and applicable to a wide range of third-party systems.
+     - You can integrate with analytics and monitoring platforms (like Apache Flink, Apache Spark, Datadog) by building custom consumers that read from the stream.
+   - **Why Some Services Are Not Applicable**:
+     - Since KDS is a general-purpose stream, most third-party services can be integrated, but in cases where a service is video-specific (e.g., Kinesis Video Streams), direct integration is not possible because KDS doesn’t handle video data.
+
+### 2. **Kinesis Data Firehose**
+   - **Data Delivery and Transformation:**
+     - Kinesis Data Firehose is focused on delivering streaming data to specific destinations (e.g., S3, Redshift, Elasticsearch, Splunk) and performs data transformation in transit using AWS Lambda. It doesn’t support custom real-time processing logic like KDS or advanced event processing frameworks (e.g., Apache Flink).
+   - **Why Some Services Are Not Applicable**:
+     - Firehose handles automatic delivery to a few select destinations (e.g., S3, Redshift, Elasticsearch, Splunk). It does not offer as much flexibility for real-time processing frameworks (e.g., Apache Flink, Apache Spark), nor does it support complex event processing.
+     - Firehose is designed to be simple and fully managed, which limits the ability to run custom logic or interface directly with non-supported third-party tools.
+
+### 3. **Kinesis Data Analytics**
+   - **Real-Time Data Analytics with SQL and Flink:**
+     - Kinesis Data Analytics is built for real-time processing and analytics using **SQL** and **Apache Flink**. It supports complex stream processing using windowing, joins, aggregations, and more.
+   - **Why Some Services Are Not Applicable**:
+     - Kinesis Data Analytics is focused on processing real-time data streams and doesn’t deal with video streams (as video requires special handling, codecs, and formats, which are better suited to Kinesis Video Streams).
+     - It’s meant for text, logs, and event-driven data analytics, so services or platforms built around video (like media processing tools) are not relevant for this service.
+
+### 4. **Kinesis Video Streams**
+   - **Video-Specific Use Cases:**
+     - Kinesis Video Streams is specialized for ingesting, storing, and processing video data. It’s designed for real-time video analytics, streaming, and machine learning use cases involving media files (e.g., security cameras, drones, etc.).
+   - **Why Many Services Are Not Applicable**:
+     - **Non-Video Tools**: Services like Apache Flink, Apache Spark, Elasticsearch, and Splunk, which deal with logs, events, and structured/unstructured text data, are not applicable because Kinesis Video Streams is solely built to handle video streams.
+     - **Different Processing Needs**: Video data requires different types of processing (e.g., frame extraction, encoding, ML-based image recognition), which is not something tools like Flink, Spark, or Redshift are designed for. Instead, Kinesis Video Streams integrates with services like Amazon Rekognition (for video analysis) or S3 for long-term storage.
+
+### Key Reasons for "Not Applicable" in Some Services:
+1. **Data Type Specialization**:
+   - Some Kinesis services are specialized for certain types of data (e.g., **Kinesis Video Streams** is focused on video), while others handle general-purpose streams (e.g., **KDS** for logs, events, JSON).
+   - Certain third-party tools are designed for specific data types (e.g., **video** tools are irrelevant for services handling only text or log streams, and vice versa).
+
+2. **Purpose and Functionality**:
+   - **Kinesis Data Streams** and **Kinesis Data Analytics** are more general-purpose and customizable, so they can integrate with a wide range of third-party tools.
+   - **Kinesis Data Firehose** and **Kinesis Video Streams** are more specialized, focusing on data delivery and video processing, respectively. Therefore, they don’t need or support as many third-party tools directly.
+
+3. **Complexity vs. Simplicity**:
+   - **Kinesis Data Firehose** is designed to be fully managed and simple. It abstracts away the complexity of custom stream processing, so it supports fewer third-party services because its main job is to deliver data to predefined destinations (S3, Redshift, Elasticsearch, etc.).
+   - **Kinesis Data Analytics** and **Kinesis Data Streams** provide more flexibility for custom processing, making them better suited for third-party integrations with systems like **Apache Flink**, **Apache Spark**, or **Kafka**.
 
