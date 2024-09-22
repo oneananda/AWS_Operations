@@ -1,7 +1,26 @@
 # Kinesis Data Streams (KDS)
 
+### Key Concepts of Kinesis Data Streams (KDS):
 
+**Streams**
 
+- Logical colletions of records, which is ordered by time and stored in 'Shards'.
+
+**Shards**
+
+- A shard is the unit of throughput in a Kinesis stream. Each shard provides a fixed capacity.
+
+**Producers**
+
+- The ones who produce the data, who are sending the data to Kinesis Stream.
+
+**Consumers**
+
+- The ones who consumes the data 
+- Two types of consumers
+  - Shared throughput consumers: Multiple consumers share the same read throughput.
+  - Enhanced fan-out consumers: Each consumer has its own read throughput.
+	
 
 ### Use Cases for KDS:
 
