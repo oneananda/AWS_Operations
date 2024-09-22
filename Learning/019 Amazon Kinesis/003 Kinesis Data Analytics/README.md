@@ -12,3 +12,25 @@ Imagine you are running an e-commerce website and you want to track user activit
 - **Low Latency**: Sub-second processing and analysis for low-latency use cases.
 - **Automatic Scaling**: Handles scaling based on the volume of incoming data.
 - **Supports Complex Stream Processing**: Apache Flink support for advanced use cases.
+
+
+### Amazon Kinesis Data Analytics - Realtime Example
+
+#### Data stream record
+
+```
+{
+  "device_id": "sensor123",
+  "temperature": 27.5,
+  "timestamp": "2024-09-22T08:00:00Z"
+}
+```
+
+#### SQL Query
+
+```
+SELECT
+  device_id,
+  temperature,
+FROM "SOURCE_SQL_STREAM"
+```
