@@ -8,7 +8,7 @@
 3. **Kinesis Data Analytics:**
 4. **Kinesis Video Streams:**
 
-# Amazon Kinesis Services Comparison
+## Amazon Kinesis Services Comparison
 
 | Feature/Service                    | **Kinesis Data Streams (KDS)**                                      | **Kinesis Data Firehose**                                         | **Kinesis Data Analytics**                                    | **Kinesis Video Streams**                                      |
 |-------------------------------------|---------------------------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------|
