@@ -8,3 +8,10 @@
 3. **Kinesis Data Analytics:**
 4. **Kinesis Video Streams:**
 
+### Amazon Kinesis Use Cases:
+- **Real-time analytics**: Processing financial transactions, real-time monitoring of IoT data.
+- **Application and system monitoring**: Collecting and analyzing logs in real time.
+- **Machine learning and AI**: Streaming data for real-time model predictions.
+- **Video streaming**: Analyzing live video data for media applications or security systems.
+
+Kinesis is widely used in scenarios where real-time data flow and decision-making are essential.
