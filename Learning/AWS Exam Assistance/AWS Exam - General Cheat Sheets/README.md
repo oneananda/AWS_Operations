@@ -190,5 +190,107 @@ This table summarizes **what each service is not capable of** and its best use c
 | **VPC Peering**            | Service sharing across multiple accounts | VPC-to-VPC connectivity |
 
 
+---
 
+### **1. AWS WAF (Web Application Firewall)**
+   - **Capability**: AWS WAF is primarily used to filter HTTP/HTTPS requests to web applications. It helps protect applications from attacks such as SQL injection and cross-site scripting (XSS).
+   - **Incapability**: It **cannot be used to manage or filter outbound traffic** or control access to network resources like VPC endpoints.
+
+---
+
+### **2. AWS EC2 (Elastic Compute Cloud) Auto Scaling**
+   - **Capability**: EC2 Auto Scaling is used to automatically add or remove EC2 instances based on load, following specific scaling policies.
+   - **Incapability**: EC2 Auto Scaling is not meant for **managing ECS or Fargate scaling**. ECS Service Auto Scaling is designed for that purpose.
+
+---
+
+### **3. AWS S3 Glacier**
+   - **Capability**: S3 Glacier is a long-term, low-cost storage service intended for archiving data with slower retrieval times.
+   - **Incapability**: **S3 Glacier is not ideal for direct data migration** using services like Snowball. It’s better to first migrate data to S3 and then use lifecycle policies to move objects to Glacier.
+
+---
+
+### **4. Amazon EBS (Elastic Block Store)**
+   - **Capability**: EBS is a block storage service used for individual EC2 instances. It provides persistent storage for running instances.
+   - **Incapability**: **EBS is not designed for storing large-scale, frequently changing data** across multiple instances for processing. Services like S3 or DynamoDB Streams are more suited for such tasks.
+
+---
+
+### **5. AWS Lambda**
+   - **Capability**: AWS Lambda is a serverless compute service that automatically scales and processes short-lived tasks based on events.
+   - **Incapability**: While Lambda is highly scalable, it is not suitable for tasks that require **persistent storage** or **long-running processes**. EC2 or ECS might be more suitable for complex, long-running jobs.
+
+---
+
+### **6. AWS Direct Connect**
+   - **Capability**: AWS Direct Connect provides a dedicated network connection between on-premises data centers and AWS, offering consistent network performance.
+   - **Incapability**: **Direct Connect requires set-up time and cannot solve immediate data transfer issues** with low-bandwidth connections. In such cases, Snowball is a better option for migrating large data volumes without stressing internet connectivity.
+
+---
+
+### **7. AWS S3 Transfer Acceleration**
+   - **Capability**: S3 Transfer Acceleration is designed to speed up uploads to S3 over long distances by using AWS edge locations.
+   - **Incapability**: It does not address the issue of **saturated internet bandwidth**. It requires stable, high-speed internet connections to be effective. Snowball would be better for migrating large amounts of data when internet bandwidth is limited.
+
+---
+
+### **8. Amazon S3 Glacier Vault**
+   - **Capability**: Glacier Vault is part of the Glacier service used to store data for long-term archiving with high durability and low cost.
+   - **Incapability**: **Directly sending data to Glacier using Snowball or other services** adds unnecessary complexity. It’s more efficient to use S3 first and then automate the transition to Glacier.
+
+---
+
+### **9. Amazon RDS (Relational Database Service)**
+   - **Capability**: RDS is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud.
+   - **Incapability**: It **does not handle high-performance, low-latency requirements** for inter-node communications in High-Performance Computing (HPC) applications. For those use cases, cluster placement groups and high-throughput storage like FSx for Lustre are better.
+
+---
+
+### **10. Amazon Route 53 Private Hosted Zone**
+   - **Capability**: A private hosted zone allows you to manage internal DNS records within your VPC, enabling internal DNS resolution without exposing them to the internet.
+   - **Incapability**: **It does not route or manage traffic between VPCs**. To securely connect VPCs or external resources without traversing the internet, PrivateLink, Transit Gateway, or VPC Peering should be used.
+
+---
+
+### **11. Cluster Placement Group**
+   - **Capability**: Cluster Placement Groups in EC2 allow you to place instances close together within a single AZ for low-latency, high-throughput performance, making them ideal for HPC applications.
+   - **Incapability**: **Cluster Placement Groups are not designed for fault tolerance**. They are focused on performance rather than isolating failures. Partition or Spread Placement Groups should be used for fault isolation.
+
+---
+
+### **12. AWS Snowcone**
+   - **Capability**: AWS Snowcone is a small-scale edge computing and data transfer device designed for environments where space, power, or bandwidth are constrained.
+   - **Incapability**: It **cannot handle large-scale data transfers** like Snowball Edge or Snowball devices. Snowcone is limited to smaller use cases (up to 8TB).
+
+---
+
+### **13. AWS Snowball with EC2 Compute Capability**
+   - **Capability**: AWS Snowball Edge devices come with compute capabilities, allowing you to process data locally before transferring it to AWS.
+   - **Incapability**: **Processing complex, long-running applications** that need continuous, large-scale compute (such as EC2 or ECS tasks) might not be suitable for Snowball Edge’s local EC2 instances, especially when dealing with massive datasets. Cloud-based services might provide more scalability.
+
+---
+
+### **14. AWS Global Accelerator**
+   - **Capability**: AWS Global Accelerator improves global application performance by routing traffic to the nearest AWS region based on network conditions, using AWS edge locations.
+   - **Incapability**: **It does not help in transferring large volumes of data (e.g., 500TB)** in a cost-effective manner, especially over constrained internet connections. Snowball or Direct Connect would be better suited for such cases.
+
+---
+
+### **15. AWS Network Load Balancer (NLB)**
+   - **Capability**: NLB efficiently distributes incoming traffic at the network level, suitable for applications requiring extreme performance in terms of throughput and low latency.
+   - **Incapability**: **It does not help improve inter-node performance** for applications like HPC that require low-latency communication between nodes. Cluster Placement Groups are more suited for inter-node communication within a single AZ.
+
+---
+
+### **16. EC2 Multi-Attach EBS Volumes**
+   - **Capability**: Multi-Attach allows EBS volumes to be attached to multiple EC2 instances simultaneously, enabling shared storage between instances.
+   - **Incapability**: **It is not efficient for processing large datasets across distributed systems**, as the shared storage model might introduce complexity and bottlenecks. S3 or DynamoDB with Lambda or ECS would offer better scalability and performance.
+
+---
+
+### **17. Amazon Aurora**
+   - **Capability**: Aurora is a high-performance, fully managed relational database engine compatible with MySQL and PostgreSQL.
+   - **Incapability**: It is **not designed for applications requiring real-time, low-latency, high-throughput processing** between multiple nodes, such as HPC applications. For these cases, consider in-memory databases or file systems like FSx for Lustre.
+
+---
 
