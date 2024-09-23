@@ -31,4 +31,11 @@
 ### 2. **CSE (Client-Side Encryption)**:
    **Client-Side Encryption (CSE)** involves encrypting the data on the client side (before it is sent to AWS) and decrypting it on the client side as well. In this case, AWS stores only the encrypted data, and the key never touches AWS infrastructure.
 
- 
+   There are two common scenarios for client-side encryption:
+
+   #### a. **CSE with AWS KMS-Managed Keys**:
+   - The client retrieves a data encryption key (DEK) from AWS KMS.
+   - The client uses this key to encrypt the data before sending it to S3.
+   - The encrypted data is stored in S3, and the key is managed securely by AWS KMS.
+   
+   **Use Case**: Used when you want to encrypt data on the client side but still leverage AWS KMS for managing keys and access control.
