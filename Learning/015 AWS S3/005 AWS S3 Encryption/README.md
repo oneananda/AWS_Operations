@@ -46,3 +46,15 @@
    - The data stored in AWS is already encrypted, and you control the decryption process.
    
    **Use Case**: Ideal when you want full control over encryption and decryption, and you prefer to handle key management and encryption processes independently of AWS.
+
+### **Key Differences Between SSE and CSE**:
+
+| Aspect                 | SSE                                           | CSE                                        |
+|------------------------|-----------------------------------------------|--------------------------------------------|
+| **Where Encryption Happens** | On the AWS server (data is encrypted before storing) | On the client side (data is encrypted before sending to AWS) |
+| **Key Management**      | Managed by AWS or by the user via KMS or custom keys | Managed entirely by the client |
+| **Who Controls Encryption Keys** | Depends on the method (SSE-S3: AWS, SSE-KMS: KMS, SSE-C: Customer) | Fully controlled by the client |
+| **Complexity**          | Simple and easier to implement, as AWS handles most of the processes | More complex, as the client is responsible for encryption and decryption |
+| **Security**            | High, but AWS handles the encryption process | Potentially higher security since the key never touches AWS |
+| **Use Cases**           | Data at rest encryption for most AWS services like S3, RDS | Client-side applications that need full control over encryption |
+
