@@ -21,4 +21,9 @@
    
    **Use Case**: Suitable when you need more control over key management, auditing, and permissions, while still wanting AWS to handle most of the encryption and decryption process.
 
-  
+   #### c. **SSE-C (Server-Side Encryption with Customer-Provided Keys)**:
+   - You provide your own encryption keys, and AWS S3 uses these keys to encrypt the data.
+   - AWS does not store the encryption keys you provide. Instead, it uses the key for the encryption process and then discards it.
+   - You must provide the same key when retrieving the encrypted data.
+   
+   **Use Case**: Best when you want full control of encryption keys, ensuring AWS never has access to them.
