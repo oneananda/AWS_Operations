@@ -12,3 +12,4 @@ We can secure the AWS S3 in various methods,
 - Cross-Origin Resource Sharing (CORS)
 - CloudFront with Signed URLs or Signed Cookies
 - S3 Object Lock
+- Versioning
