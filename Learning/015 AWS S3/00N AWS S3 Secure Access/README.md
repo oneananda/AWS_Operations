@@ -13,3 +13,4 @@ We can secure the AWS S3 in various methods,
 - **CloudFront with Signed URLs or Signed Cookies**: Limits access to S3 content via CloudFront by using time-limited URLs or cookies for secure delivery.
 - **S3 Object Lock**: Provides write-once-read-many (WORM) protection to prevent deletion or modification of objects for a set period.
 - **Versioning**: Keeps multiple versions of an object to protect against accidental deletion or overwriting.
+- **Origin Access Identity (OAI)**: A CloudFront feature that allows you to restrict access to your S3 bucket so that only CloudFront can access it, preventing direct access to the bucket.
