@@ -39,3 +39,10 @@
    - The encrypted data is stored in S3, and the key is managed securely by AWS KMS.
    
    **Use Case**: Used when you want to encrypt data on the client side but still leverage AWS KMS for managing keys and access control.
+
+   #### b. **CSE with Customer-Provided Keys**:
+   - You use your own encryption libraries to encrypt the data before sending it to AWS (for example, Amazon S3).
+   - The client manages the encryption keys and process entirely outside of AWS.
+   - The data stored in AWS is already encrypted, and you control the decryption process.
+   
+   **Use Case**: Ideal when you want full control over encryption and decryption, and you prefer to handle key management and encryption processes independently of AWS.
