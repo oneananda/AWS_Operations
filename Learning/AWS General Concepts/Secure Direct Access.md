@@ -18,6 +18,7 @@
 
 ## How to Use `"Key Concepts to Secure Direct Access"` Table
 
+- **Origin Access Identity (OAI)**: Use this when you want to ensure that your S3 content is only accessible through CloudFront, blocking direct access to S3 URLs and enhancing security.
 - **VPC Endpoints**: Best for securing direct access to services from within your AWS network.
 - **API Gateway**: A great option if you need to control access to backend services like databases through a secure API.
 - **IAM Roles**: Always use IAM roles and policies to control access at a granular level.
