@@ -58,3 +58,7 @@
 | **Security**            | High, but AWS handles the encryption process | Potentially higher security since the key never touches AWS |
 | **Use Cases**           | Data at rest encryption for most AWS services like S3, RDS | Client-side applications that need full control over encryption |
 
+### **Choosing Between SSE and CSE**:
+- **Use SSE** when you want AWS to handle encryption, key management, and compliance while still maintaining secure data encryption.
+- **Use CSE** when you require full control over encryption keys and want to ensure that AWS never has access to the unencrypted data.
+
