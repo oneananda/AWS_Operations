@@ -27,3 +27,8 @@
    - You must provide the same key when retrieving the encrypted data.
    
    **Use Case**: Best when you want full control of encryption keys, ensuring AWS never has access to them.
+
+### 2. **CSE (Client-Side Encryption)**:
+   **Client-Side Encryption (CSE)** involves encrypting the data on the client side (before it is sent to AWS) and decrypting it on the client side as well. In this case, AWS stores only the encrypted data, and the key never touches AWS infrastructure.
+
+ 
