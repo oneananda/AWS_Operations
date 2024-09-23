@@ -13,3 +13,12 @@
    - Amazon S3 takes care of both the key management and encryption process without any customer involvement.
    
    **Use Case**: Ideal when you want to encrypt data without managing your own keys, and you trust AWS to manage the entire process.
+
+   #### b. **SSE-KMS (Server-Side Encryption with AWS KMS-Managed Keys)**:
+   - AWS Key Management Service (KMS) is used to manage the encryption keys.
+   - You have more control over who can access and manage the encryption keys.
+   - Offers additional security through audit logs, key rotation, and granular permissions via AWS IAM.
+   
+   **Use Case**: Suitable when you need more control over key management, auditing, and permissions, while still wanting AWS to handle most of the encryption and decryption process.
+
+  
