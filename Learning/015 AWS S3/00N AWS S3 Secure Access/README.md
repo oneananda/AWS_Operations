@@ -15,7 +15,6 @@ We can secure the AWS S3 in various methods,
 - **Versioning**: Keeps multiple versions of an object to protect against accidental deletion or overwriting.
 - **Origin Access Identity (OAI)**: A CloudFront feature that allows you to restrict access to your S3 bucket so that only CloudFront can access it, preventing direct access to the bucket.
 
-
 ### Default - AWS S3 Secure Access
 
 By default, S3 Block Public Access is enabled, and ACLs are enabled but restricted by default to avoid public access. All other features must be configured based on your security or access requirements.
