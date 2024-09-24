@@ -34,3 +34,18 @@ SELECT
   temperature,
 FROM "SOURCE_SQL_STREAM"
 ```
+
+### Kinesis Data Analytics 3rd Party
+
+Kinesis Data Analytics provides robust capabilities for processing streaming data in real-time. It fully supports **Apache Flink**, which allows developers to write complex event processing applications with ease. The service seamlessly integrates with various external services, such as:
+
+- **Elasticsearch**: Enabling real-time search capabilities on streaming data.
+- **Splunk**: To facilitate enhanced operational insights and analytics.
+
+Kinesis Data Analytics can output processed data to a variety of destinations, including:
+
+- **Amazon S3**: For durable storage and further analysis.
+- **Amazon Redshift**: For data warehousing and complex queries.
+
+This flexibility allows organizations to build comprehensive data pipelines that cater to their specific analytics needs.
+
