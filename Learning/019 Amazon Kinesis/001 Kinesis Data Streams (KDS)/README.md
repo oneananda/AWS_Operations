@@ -44,4 +44,11 @@ Stream monitoring data from applications or IoT devices for real-time insights.
 **Machine learning applications:**
 Capture data from various sources and feed it into machine learning models for real-time predictions.
 
+### Kinesis Data Streams (KDS) 3rd Party
 
+- **Apache Flink**: For advanced stream processing and event-driven applications.
+- **Apache Spark**: To leverage its powerful analytics capabilities for big data processing.
+- **Datadog**: For monitoring and observability, providing insights into the performance of applications.
+- **Elasticsearch**: For real-time search and analytics on large datasets.
+
+Additionally, KDS supports connectors for **Apache Kafka**, enabling users to integrate Kinesis with existing Kafka-based ecosystems, thereby enhancing data ingestion and processing workflows.
