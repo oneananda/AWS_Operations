@@ -21,5 +21,9 @@
    - **Primary Use**: Tracks AWS resource configurations and changes.
    - **Key Features**: Continuous monitoring, compliance checking, resource change tracking.
 
+3. **AWS IAM (Identity and Access Management)**
+   - **Type**: Access Control
+   - **Primary Use**: Manage user access and permissions to AWS services.
+   - **Key Features**: Fine-grained access control, role-based access.
 
 
