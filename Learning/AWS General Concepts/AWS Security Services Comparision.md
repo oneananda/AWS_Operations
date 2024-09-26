@@ -16,5 +16,10 @@
    - **Primary Use**: Centralized view of security alerts and compliance status.
    - **Key Features**: Aggregates data from multiple AWS services, provides insights into security posture.
 
+2. **AWS Config**
+   - **Type**: Resource Configuration Monitoring
+   - **Primary Use**: Tracks AWS resource configurations and changes.
+   - **Key Features**: Continuous monitoring, compliance checking, resource change tracking.
+
 
 
