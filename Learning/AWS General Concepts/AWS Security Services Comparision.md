@@ -9,3 +9,12 @@
 | **Cost Model**    | Tiered pricing based on usage      | Pay-as-you-go based on data processed | Pay-as-you-go based on rules and requests | Pay-as-you-go based on events processed | Pay-as-you-go based on assessments |
 | **Best For**      | Websites, applications needing DDoS protection | Compliance and data privacy needs | Protecting against web attacks and bots | Detecting unusual behavior and threats | Identifying vulnerabilities in instances and containers |
 | **Integration**   | Integrates with AWS services like CloudFront, Route 53 | Integrates with S3, IAM | Works with CloudFront, API Gateway, and Application Load Balancer | Integrates with CloudTrail, VPC Flow Logs | Integrates with EC2 and ECR         |
+
+### Additional Services:
+1. **AWS Security Hub**
+   - **Type**: Security Posture Management
+   - **Primary Use**: Centralized view of security alerts and compliance status.
+   - **Key Features**: Aggregates data from multiple AWS services, provides insights into security posture.
+
+
+
