@@ -44,3 +44,18 @@ AWS provides a variety of container services to help you run, manage, and orches
      - Automatic scaling.
      - Designed for web applications and APIs.
 
+### Comparison Table: "Lift & Shift" Capabilities and Other Features
+
+| Feature/Service          | Amazon EKS                   | Amazon ECS                   | AWS Fargate                  | Amazon ECR                   | AWS App Runner              |
+|--------------------------|------------------------------|------------------------------|------------------------------|------------------------------|-----------------------------|
+| **"Lift & Shift" Capability** | High (Kubernetes standard allows migration of on-premise workloads) | Medium (Docker-based, requires AWS-specific configurations) | Medium (Containers abstracted, but may require adjustments for serverless) | N/A (Registry service only) | Low (More suited for new applications rather than lift-and-shift) |
+| **Orchestration**        | Kubernetes-based             | ECS-specific                 | Managed by Fargate           | N/A                         | N/A                         |
+| **Managed Control Plane**| Yes                          | Yes (Simplified, no direct access) | Yes (Fully managed)          | N/A                         | Yes                         |
+| **Serverless Option**    | Yes (EKS + Fargate)          | Yes (ECS + Fargate)          | Fully serverless             | N/A                         | Fully managed              |
+| **Infrastructure Management** | Required (Kubernetes worker nodes) | Optional (with Fargate)      | None                         | N/A                         | None                        |
+| **Integration with AWS Services** | High (IAM, VPC, CloudWatch, etc.) | High (Tightly integrated with AWS) | High (Integrated with ECS and EKS) | High (Integrated with ECS/EKS) | Medium                     |
+| **Scalability**          | Automatic and Manual         | Automatic and Manual         | Automatic                    | N/A                         | Automatic                  |
+| **Ease of Migration**    | Complex (requires Kubernetes knowledge) | Moderate (Docker knowledge required) | Simple (if already containerized) | N/A                        | Simple (for web apps)      |
+| **Use Cases**            | Microservices, complex applications | Web services, batch processing | Microservices, stateless apps | Storing container images   | Web applications, APIs     |
+| **Learning Curve**       | High (Kubernetes expertise)  | Low to Medium                | Low                          | Low                         | Low                         |
+| **Cost Management**      | Pay for EC2 nodes and EKS control plane | Pay for EC2 nodes or Fargate | Pay for the task duration (no servers) | Storage costs (per GB)    | Pay for usage              |
