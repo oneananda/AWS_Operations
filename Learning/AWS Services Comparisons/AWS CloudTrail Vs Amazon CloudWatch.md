@@ -23,3 +23,15 @@
   - **Alarms**: Allows setting up alarms based on metrics to trigger notifications or automated actions.
 - **Retention**: Provides options for short-term data retention, though log data can be stored indefinitely in CloudWatch Logs.
 - **Example**: Monitoring the CPU usage of an EC2 instance or setting up an alarm for high memory usage on an RDS database.
+
+### **AWS CloudTrail - Amazon CloudWatch Key Differences**
+| Aspect               | CloudTrail                                      | CloudWatch                              |
+|----------------------|-------------------------------------------------|-----------------------------------------|
+| **Focus**            | User activity and API tracking                 | Metrics, logs, and real-time monitoring |
+| **Data Type**        | API calls, events, user activities             | Performance metrics, application logs   |
+| **Retention**        | Long-term (stored in S3)                       | Short-term (configurable for logs)      |
+| **Common Use Cases** | Auditing, compliance, security investigation   | Real-time monitoring, alerts, resource usage tracking |
+| **Typical Usage**    | Who did what, when, and where                  | How resources are performing            |
+
+In short, **CloudTrail** answers the "who did what?" question by tracking API calls, while **CloudWatch** focuses on "how is it performing?" by monitoring resource metrics and logs.
+
