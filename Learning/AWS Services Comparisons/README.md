@@ -5,3 +5,5 @@
 ### **Monitoring and Management Services**
 
 **CloudTrail vs CloudWatch**: Logging user activity vs real-time monitoring.
+
+**Amazon Comprehend Medical Vs Amazon Macie**:
