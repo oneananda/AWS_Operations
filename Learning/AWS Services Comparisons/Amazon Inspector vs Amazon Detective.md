@@ -2,6 +2,14 @@
 
 **Amazon Inspector** and **Amazon Detective** are both AWS security services, but they serve different purposes related to securing AWS environments. Here’s a breakdown of their differences:
 
+### **Amazon Inspector**
+- **Use Cases**:
+  - Detecting security vulnerabilities in EC2 instances, such as unpatched software or network misconfigurations.
+  - Assessing container images in ECR for potential security issues.
+  - Continuous security monitoring in DevOps pipelines.
+  
+
+
 ### **Comparison Summary**
 | Aspect                   | **Amazon Inspector**                                 | **Amazon Detective**                               |
 |--------------------------|------------------------------------------------------|---------------------------------------------------|
@@ -17,4 +25,5 @@
 - **Amazon Detective** is used for **reactive investigation** of security incidents. It helps security analysts dig deeper into events flagged by other services (e.g., GuardDuty) to understand the incident's scope, root cause, and impact using data analytics and visualizations.
 
 Use **Amazon Inspector** for continuous vulnerability scanning and compliance checks, and **Amazon Detective** when you need to investigate and analyze the cause and context of a security incident.
+
 
