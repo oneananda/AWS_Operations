@@ -9,3 +9,7 @@
 ### **Machine Learning Services**
 
 **Amazon Comprehend Medical Vs Amazon Macie**:
+
+### **Database Services**
+
+**DynamoDB vs DocumentDB**: NoSQL solutions for different use cases.
