@@ -23,3 +23,19 @@ AWS Snowball offers several device types to accommodate different data transfer 
    - **Use Case**: A smaller, portable option suitable for edge computing and smaller data transfers, making it ideal for remote locations.
 
 Each device type is tailored to specific scenarios, allowing businesses to choose the right solution based on their data transfer and processing requirements.
+
+### Comparison table for the different AWS Snowball device types:
+
+| **Device Type**               | **Usable Capacity** | **Compute Capability** | **Use Case**                                      | **Data Transfer Speed**    |
+|-------------------------------|---------------------|------------------------|---------------------------------------------------|-----------------------------|
+| **Snowball Edge Storage Optimized** | 80 TB               | Yes                    | Large data transfers and edge storage              | Up to 1 Gbps                |
+| **Snowball Edge Compute Optimized** | 42 TB               | Yes                    | Compute-intensive workloads with local processing   | Up to 1 Gbps                |
+| **Snowmobile**                | Up to 100 PB        | No                     | Massive data transfers (exabytes)                  | Truck-based transport        |
+| **Snowcone**                  | 8 TB                | Yes                    | Small data transfers and portable edge computing    | Up to 14 Gbps               |
+
+### Key Differences:
+
+- **Capacity**: Snowmobile offers the largest capacity, suitable for organizations with vast amounts of data. Snowcone is the most compact.
+- **Compute Capability**: Snowball Edge devices have compute capabilities, while Snowmobile does not. Snowcone also supports edge computing.
+- **Use Case**: Each device is tailored for specific scenarios, from large-scale migrations to remote data collection and processing. 
+
