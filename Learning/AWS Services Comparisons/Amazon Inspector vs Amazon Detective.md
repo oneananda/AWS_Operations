@@ -8,6 +8,11 @@
   - Assessing container images in ECR for potential security issues.
   - Continuous security monitoring in DevOps pipelines.
   
+### **Amazon Detective**
+- **Use Cases**:
+  - Investigating suspicious activities, such as unauthorized access or unusual data transfers.
+  - Understanding the root cause of security findings reported by other AWS security services like Amazon GuardDuty.
+  - Analyzing how a security incident unfolded, including the entities involved and their interactions.
 
 
 ### **Comparison Summary**
