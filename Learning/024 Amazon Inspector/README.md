@@ -1,6 +1,6 @@
 ﻿# Amazon Inspector
 
-`Amazon Inspector` is an automated security assesment tool focussed on identifying vulnerablities and scans security best practices in AWS.
+`Amazon Inspector` is an automated security assessment tool focused on identifying vulnerabilities and scans security best practices in AWS.
 
 `Amazon Inspector` is like a security expert who regularly checks the cloud servers and container images for weak spots. If it finds any potential issues, like an old piece of software that hackers could exploit, it lets us know and guides us on how to fix it. It’s an automated security checkup that keeps the cloud environment safe and up to date.
 
