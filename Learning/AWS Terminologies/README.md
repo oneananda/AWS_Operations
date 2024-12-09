@@ -65,3 +65,8 @@ An Elastic Load Balancer automatically distributes incoming application or netwo
 An Auto Scaling Group allows you to automatically adjust the number of EC2 instances in response to changes in demand. It ensures that you have the right number of instances to handle the load while optimizing costs.
 
 ---
+
+### **Amazon S3 (Simple Storage Service)**
+Amazon S3 is an object storage service that provides scalability, data availability, security, and performance. It allows you to store and retrieve any amount of data, at any time, from anywhere.
+
+---
