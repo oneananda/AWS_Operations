@@ -75,3 +75,8 @@ Amazon S3 is an object storage service that provides scalability, data availabil
 A Virtual Private Cloud allows you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network. You have control over IP address ranges, subnets, route tables, and gateways.
 
 ---
+
+### **CloudFormation**
+AWS CloudFormation is a service that helps you model and set up your AWS resources using templates. It automates the process of creating and managing resources, ensuring consistency across your environment.
+
+---
