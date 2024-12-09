@@ -35,7 +35,7 @@ This document provides a detailed comparison of the AWS load balancers, includin
 
 - **Classic Load Balancer (CLB):**
   - **Example:** A legacy internal web application that needs basic SSL termination and health checks.
-  - **Use Case:** Basic HTTP/HTTPS applications with minimal routing needs, existing setups that haven’t yet upgraded to ALB or NLB.
+  - **Use Case:** Basic HTTP/HTTPS applications with minimal routing needs, existing setups that haven't yet upgraded to ALB or NLB.
 
 - **Gateway Load Balancer (GWLB):**
   - **Example:** A multi-cloud security architecture using third-party firewalls to inspect and secure incoming traffic from on-premises and cloud networks.
