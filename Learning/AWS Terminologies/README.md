@@ -70,3 +70,8 @@ An Auto Scaling Group allows you to automatically adjust the number of EC2 insta
 Amazon S3 is an object storage service that provides scalability, data availability, security, and performance. It allows you to store and retrieve any amount of data, at any time, from anywhere.
 
 ---
+
+### **Amazon VPC (Virtual Private Cloud)**
+A Virtual Private Cloud allows you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network. You have control over IP address ranges, subnets, route tables, and gateways.
+
+---
