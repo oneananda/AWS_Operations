@@ -54,3 +54,14 @@ It provides a private, encrypted tunnel for secure communication, allowing users
 Similar to SSH, RDP allows users to securely connect to remote servers or computers. It is typically used for Windows systems to provide a graphical interface for managing remote systems.
 
 ---
+
+
+### **Elastic Load Balancer (ELB)**
+An Elastic Load Balancer automatically distributes incoming application or network traffic across multiple targets, such as EC2 instances, containers, and IP addresses, in one or more Availability Zones. It ensures high availability, fault tolerance, and scalability of your applications.
+
+---
+
+### **Auto Scaling Group (ASG)**
+An Auto Scaling Group allows you to automatically adjust the number of EC2 instances in response to changes in demand. It ensures that you have the right number of instances to handle the load while optimizing costs.
+
+---
