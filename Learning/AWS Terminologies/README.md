@@ -1,48 +1,56 @@
 # AWS Terminologies
 
-**SSL Termination**
+### **SSL Termination**
+This is a process of decrypting the SSL (Secure Sockets Layer) or TLS (Transport Layer Security) data before sending the data to the application layer.
 
-This is a process of decrypting the SSL (Secure Sockets Layer) or TLS (Transport Layer Security) data before sending the data to application layer,
+This is typically done to offload the decryption process from the backend servers, improving performance.
 
-This is typically done to offload the decryption process from the backend servers, which is improving performance.
+---
 
-**Sticky sessions**
-
+### **Sticky Sessions**
 A user’s requests are always routed to the same server during their session.
 
-This will be useful when the application stores session data on the server, such as in-memory caches, and it’s crucial that the user consistently interacts with the same server to maintain their session state.
+This is useful when the application stores session data on the server, such as in-memory caches, and it’s crucial that the user consistently interacts with the same server to maintain their session state.
 
-**CPU Burst**
+---
 
-For Lambda, sometimes we need the function to do more processing than it acutually can do.
+### **CPU Burst**
+For AWS Lambda, sometimes the function needs to do more processing than it typically can handle. CPU burst capability helps accommodate such situations temporarily.
 
-**End-to-End Encryption (E2E)** 
+---
 
+### **End-to-End Encryption (E2E)** 
 E2E encryption ensures that data remains encrypted from the client's browser to the backend application server. This prevents any intermediary, including load balancers, from reading the data, fully preserving data confidentiality.
 
-	Note: SSL Termination is directly propotional to E2E Encryption.
+> **Note:** SSL Termination is directly proportional to E2E Encryption.
 
-**Cross-Zone Load Balancing**
+---
 
-ALB has cross-zone load balancing enabled by default, which allows it to distribute incoming traffic evenly across all registered targets in different Availability Zones.
+### **Cross-Zone Load Balancing**
+Application Load Balancer (ALB) has cross-zone load balancing enabled by default, allowing it to distribute incoming traffic evenly across all registered targets in different Availability Zones.
 
-**Elastic IP Address (EIP)**
+---
 
-An Elastic IP address is a static, public IPv4 address that you can allocate to your AWS account. You can associate an Elastic IP with an EC2 instance
+### **Elastic IP Address (EIP)**
+An Elastic IP address is a static, public IPv4 address that you can allocate to your AWS account. You can associate an Elastic IP with an EC2 instance.
 
-**Bastion Server**
+---
 
-A bastion server, also known as a jump box, used to connect to a private resources from the box.
+### **Bastion Server**
+A bastion server, also known as a jump box, is used to connect to private resources from an external system. 
 
-This can be done either by SSH or RDP.
+This can be done via **SSH** or **RDP**.
 
-**SSH (Secure Shell)**
+---
 
-SSH, or Secure Shell, is like a secure, digital key that lets you safely connect to and control a computer or server over the internet. Imagine it as a private, encrypted tunnel that you create between your computer and another device, allowing you to send commands, transfer files, or manage that device remotely without anyone being able to eavesdrop.
+### **SSH (Secure Shell)**
+SSH is a secure protocol used to safely connect to and control a server or computer remotely over the internet. 
 
-It's commonly used by developers and system administrators to securely access servers, troubleshoot issues, or manage web applications. SSH ensures that everything you do during this connection, including your login credentials and the commands you type, is kept private and secure from hackers or prying eyes.
+It provides a private, encrypted tunnel for secure communication, allowing users to send commands, transfer files, or manage systems without the risk of interception by unauthorized entities.
 
-**RDP (Remote Desktop Protocol)**
+---
 
-Similiar to SSH, this is used to safely connect to remote server.
+### **RDP (Remote Desktop Protocol)**
+Similar to SSH, RDP allows users to securely connect to remote servers or computers. It is typically used for Windows systems to provide a graphical interface for managing remote systems.
 
+---
