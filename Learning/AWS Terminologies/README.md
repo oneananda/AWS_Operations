@@ -80,3 +80,8 @@ A Virtual Private Cloud allows you to provision a logically isolated section of 
 AWS CloudFormation is a service that helps you model and set up your AWS resources using templates. It automates the process of creating and managing resources, ensuring consistency across your environment.
 
 ---
+
+### **IAM (Identity and Access Management)**
+IAM allows you to securely manage access to AWS services and resources. You can create users, groups, and roles, and assign specific permissions to control who can access what.
+
+---
