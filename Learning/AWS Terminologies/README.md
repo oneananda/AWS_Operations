@@ -85,3 +85,8 @@ AWS CloudFormation is a service that helps you model and set up your AWS resourc
 IAM allows you to securely manage access to AWS services and resources. You can create users, groups, and roles, and assign specific permissions to control who can access what.
 
 ---
+
+### **AWS Lambda**
+AWS Lambda is a serverless computing service that lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
+
+---
