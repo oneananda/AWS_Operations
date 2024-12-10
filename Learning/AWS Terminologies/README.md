@@ -90,3 +90,18 @@ IAM allows you to securely manage access to AWS services and resources. You can 
 AWS Lambda is a serverless computing service that lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
 
 ---
+
+### **EBS (Elastic Block Store)**
+Elastic Block Store provides persistent block storage for use with EC2 instances. It is designed for workloads that require regular updates or access to storage at the block level.
+
+---
+
+### **Route 53**
+Route 53 is a scalable and highly available Domain Name System (DNS) web service. It translates human-readable domain names into IP addresses that computers use to connect to each other.
+
+---
+
+### **Security Groups**
+Security groups act as virtual firewalls for your EC2 instances. They control inbound and outbound traffic to your instances.
+
+---
