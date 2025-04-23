@@ -4,3 +4,11 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 ---
 
+## Core Components and Features  
+- **DNS Service**: Public and private DNS zones for managing how domain names resolve to your endpoints.  
+- **Domain Registration**: Purchase, transfer, and manage top-level domains (TLDs) directly through the Route 53 console or APIs.  
+- **Health Checks & Monitoring**: Automated health checks that verify endpoint availability and trigger DNS failover if an endpoint becomes unhealthy.  
+- **Route 53 Resolver**: Provides recursive DNS services within Amazon VPCs, with optional DNS firewall rules to block malicious domains.  
+- **Alias Records**: A proprietary virtual record type that lets you map apex (root) domains to AWS resources (like Elastic Load Balancers or CloudFront distributions) without needing CNAMEs citeturn0search9turn0search1.
+
+---
