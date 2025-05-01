@@ -12,3 +12,14 @@
 4. **Military and Tactical Field Operations**  
    - Perform mission-critical workloads like geospatial analysis, real-time communication, or data fusion securely in disconnected environments.
 
+5. **Healthcare Imaging and Diagnostics in Remote Areas**  
+   - Run diagnostic applications and image processing on-premises (e.g., MRI, CT scans) before uploading data to AWS.
+
+6. **Temporary Edge Datacenters**  
+   - Stand up a powerful temporary datacenter with compute and storage capabilities in locations like offshore rigs, ships, or mobile labs.
+
+7. **Disaster Recovery Operations**  
+   - Use the device as a portable recovery solution with compute capacity to restore services quickly in disconnected or damaged environments.
+
+8. **Machine Vision and Automation in Manufacturing**  
+   - Deploy computer vision applications for defect detection, safety monitoring, and automation directly on the production floor.
