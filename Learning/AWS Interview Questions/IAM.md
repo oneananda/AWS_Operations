@@ -32,5 +32,5 @@
 >        * Schedule an **EventBridge** rule (daily) that triggers a **Lambda** function to scan AWS SSO for expired contractors and **deprovision** (disable) their access immediately.
 >        * Send provisioning, upcoming-expiry (e.g., 7 days prior), and deprovisioning alerts to an **SNS** topic integrated with email or Slack.
 >        * Enable **CloudTrail** for all `AssumeRole` and console-login events and enforce an AWS Config rule to detect any stale or orphaned principals.
-
-*Use this scenario to evaluate the candidate’s ability to ask incisive questions, articulate the distinguishing features of AWS federation and SSO for temporary access, and justify a clear, data-driven recommendation.*
+> 
+> *Use this scenario to evaluate the candidate’s ability to ask incisive questions, articulate the distinguishing features of AWS federation and SSO for temporary access, and justify a clear, data-driven recommendation.*
